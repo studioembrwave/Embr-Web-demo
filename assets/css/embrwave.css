@@ -1,0 +1,223 @@
+/* Embrwave brand and responsive copy treatments. Loaded after template styles. */
+:root {
+    --primary: #2323ff;
+    --bs-primary: #2323ff;
+    --bs-primary-rgb: 35, 35, 255;
+}
+
+.theme-btn.primary-bg,
+a.theme-btn:hover,
+button.theme-btn:hover {
+    color: #fff;
+}
+a.theme-btn.primary-bg:hover,
+button.theme-btn.primary-bg:hover {
+    color: #000;
+}
+a:focus-visible, button:focus-visible, input:focus-visible,
+textarea:focus-visible, select:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 5px;
+    box-shadow: 0 0 0 7px var(--primary);
+}
+::selection { background: var(--primary); color: #fff; }
+[hidden] { display: none !important; }
+
+/* Keep decoration relative to the line, so wording changes cannot detach it. */
+.hero-title .heading-line { overflow: visible !important; }
+.hero-title .heading-line > .timeline-anim {
+    display: block;
+    white-space: normal;
+}
+.home-page .hero-title .heading-line:first-child > .timeline-anim {
+    display: flex;
+    align-items: baseline;
+    gap: .12em;
+    white-space: nowrap;
+}
+.hero-title img.hero-dots {
+    position: static;
+    display: inline-block;
+    flex: 0 0 auto;
+    width: .34em;
+    height: .26em;
+    margin: 0;
+    vertical-align: baseline;
+    align-self: baseline;
+}
+.hero-sec .hero-title .circle-primary-shape {
+    position: static !important;
+    display: inline-block;
+    width: .55em;
+    height: .55em;
+    margin-left: .1em;
+    vertical-align: baseline;
+    z-index: auto;
+    pointer-events: none;
+}
+.hero-sec .hero-sec-bottom {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+    gap: clamp(32px, 4vw, 72px);
+    align-items: end;
+}
+.hero-sec .hero-sec-bottom .hero-sec-bottom-left {
+    min-width: 0;
+    margin-top: 0;
+    gap: 24px;
+}
+.hero-sec .hero-sec-bottom .hero-sec-bottom-right {
+    min-width: 0;
+    width: auto;
+    align-items: flex-start;
+    gap: 42px;
+}
+.hero-sec .hero-sec-bottom .hero-sec-bottom-right .hero-sec-bottom-right-content-top {
+    padding-right: 0;
+    width: 100%;
+}
+.hero-sec .hero-sec-bottom .hero-sec-bottom-right .hero-sec-bottom-right-content-top p {
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 400;
+    text-transform: none;
+}
+.hero-title,
+.hero-sec-2 .hero-title {
+    font-size: clamp(48px, 6.5vw, 94px);
+    line-height: 1.02;
+    letter-spacing: -.055em;
+    overflow-wrap: anywhere;
+}
+.home-page .hero-title { font-size: clamp(48px, 7.3vw, 106px); }
+.work-hero-sec .hero-title { font-size: clamp(38px, 5.2vw, 74px); }
+.hero-sec .hero-sec-top { margin-bottom: clamp(72px, 9vw, 130px); }
+.subtitle { line-height: 1.5; font-size: 14px; flex-wrap: wrap; }
+.hero-project-link { align-self: flex-start; margin-top: 12px; padding: 12px 20px; }
+.hero-sec video {
+    width: 225px;
+    max-width: 100%;
+    height: 180px;
+    object-fit: contain;
+    object-position: left center;
+}
+.hero-banner-content .link-with-border { max-width: 100%; flex-shrink: 0; }
+
+.content-notice, .social-pending {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: 0;
+    text-transform: none;
+}
+p.content-notice { margin-top: 24px; margin-bottom: 0; }
+.heading-line, .section-header .left, .section-header-right,
+.work-price, .accordion-content, .experience-content,
+.pricing-box, .cta-widget, .blog-content-box { min-width: 0; }
+.section-header .title, .section-title2 {
+    overflow-wrap: anywhere;
+    line-height: 1.05;
+    letter-spacing: -.045em;
+}
+.section-header p { max-width: 100%; }
+.service-sec-2 .section-header .left,
+.about-sec .section-header .left { max-width: 100%; }
+.service-faq-item .accordion-header button {
+    overflow-wrap: anywhere;
+    font-size: clamp(23px, 3.2vw, 44px);
+    line-height: 1.15;
+}
+.service-no-accordion-faq-item .accordion-header {
+    flex-wrap: wrap;
+    font-size: clamp(23px, 2.2vw, 32px);
+    line-height: 1.2;
+}
+.service-ratings { max-width: 190px; }
+.service-funfacts { flex-wrap: wrap; gap: 24px; }
+.service-funfact-box h4 { font-size: clamp(38px, 4vw, 60px); }
+.award-box { flex-wrap: wrap; gap: 12px; }
+.award-box .award-year { font-size: 14px; line-height: 1.5; }
+.about-bottom { flex-wrap: wrap; gap: 24px; }
+.about-bottom .est-date { max-width: 100%; font-size: 14px; line-height: 1.5; }
+.experience-box .experience-content h5,
+.experience-box .experience-content .designation { line-height: 1.2; }
+.work-bottom-content { flex-wrap: wrap; row-gap: 12px; }
+.work-bottom-content > span { max-width: 100%; overflow-wrap: anywhere; }
+.work-service-detail-sec .custom-row { gap: 28px; flex-wrap: wrap; }
+.work-service-detail-box { flex: 1 1 200px; max-width: 100%; }
+.work-service-detail-box span { font-size: 16px; }
+.task-box p { overflow-wrap: anywhere; }
+.pricing-box .price { display: block; font-size: 42px; line-height: 1.1; }
+.pricing-box .pricing-package-type { min-height: 48px; line-height: 1.3; }
+.pricing-box .pricing-body .pricing-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+.pricing-box .pricing-body .theme-btn { justify-content: center; text-align: center; }
+.cta-sec .cta-content { min-width: 0; }
+.cta-sec .cta-content .section-header-2 .section-title2 {
+    font-size: clamp(48px, 6.7vw, 96px);
+    line-height: 1.02;
+    letter-spacing: -.05em;
+}
+.cta-sec .section-header-2 h6 { text-transform: none; line-height: 1.6; max-width: 650px; }
+.footer-sec .big-text .section-title2 {
+    font-size: clamp(54px, 16.5vw, 230px);
+    line-height: 1.1;
+    letter-spacing: -.055em;
+}
+.footer-sec .copyright-wrap { flex-wrap: wrap; gap: 20px; }
+.footer-sec .copyright-wrap p { overflow-wrap: anywhere; max-width: 100%; }
+.footer-sec .big-text .circle-primary-shape { right: 0; bottom: .18em; }
+.cta-sec-2 .custom-row { flex-wrap: wrap; gap: 32px; }
+.cta-sec-2 .cta-widget { flex: 1 1 220px; max-width: 100%; }
+.cta-sec-2 .cta-widget a { overflow-wrap: anywhere; }
+.contact-sec label { line-height: 1.4; }
+.contact-sec textarea { min-height: 180px; }
+.blog-detail-sec .custom-row > .left { min-width: 0; }
+.blog-sidebar { min-width: 0; }
+.blog-meta { flex-wrap: wrap; gap: 14px; }
+.comment-lists > p { color: #bbb; line-height: 1.6; }
+
+@media (max-width: 1100px) {
+    .hero-sec .hero-sec-bottom { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+    .hero-sec .hero-sec-bottom .hero-sec-bottom-right { max-width: 680px; }
+    .hero-title, .hero-sec-2 .hero-title { font-size: clamp(48px, 9vw, 94px); }
+    .home-page .hero-title { font-size: clamp(48px, 10vw, 106px); }
+    .hero-sec .hero-sec-top .hero-left { gap: 24px; }
+    .location-and-time { font-size: 13px; }
+}
+@media (max-width: 600px) {
+    .hero-title, .hero-sec-2 .hero-title { font-size: clamp(38px, 10vw, 60px); }
+    .home-page .hero-title { font-size: clamp(44px, 11.5vw, 68px); }
+    .hero-sec .hero-sec-top { margin-bottom: 64px; }
+    .hero-sec .hero-sec-bottom .hero-sec-bottom-right .hero-sec-bottom-right-content-top p { font-size: 16px; }
+    .hero-banner-content { flex-direction: column; align-items: flex-start; }
+    .hero-banner-content .link-with-border { font-size: 12px; }
+    .section-header .title, .section-header-2 .section-title2,
+    .faq-sec .section-header .title, .experience-sec .section-header .title {
+        font-size: clamp(34px, 10vw, 50px);
+        line-height: 1.08;
+        letter-spacing: -.04em;
+    }
+    .section-header .section-header-right { max-width: 100%; }
+    .section-subtitle .theme-btn { font-size: 12px; line-height: 1.4; }
+    .work-service-detail-box { text-align: left; }
+    .service-no-accordion-faq-item .accordion-content-bottom { gap: 24px; }
+    .service-ratings { text-align: left; max-width: none; }
+    .pricing-box { padding-right: 10px; }
+    .pricing-box .price { font-size: 38px; }
+    .contact-sec .container { padding-left: 20px; padding-right: 20px; }
+    .footer-sec .copyright-wrap { flex-direction: column; align-items: flex-start; }
+    .footer-sec .copyright-wrap p { font-size: 12px; line-height: 1.6; }
+    .popup-menu-wrap .popup-menu ul li a { padding-top: 18px; padding-bottom: 18px; }
+    .social-pending { font-size: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .preloader-wrap { display: none !important; }
+    .scroll-animation { opacity: 1 !important; transform: none !important; }
+    .client-logo-slide, .testimonial-list { animation: none !important; }
+}

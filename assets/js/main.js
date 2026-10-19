@@ -34,28 +34,19 @@ $(function () {
     }
     
     function startTime() {
-        const timeEl = document.querySelectorAll('.realtime');
-        var today = new Date();
-        var h = today.getHours();
-        var m = today.getMinutes();
-        var ampm = h >= 12 ? 'PM' : 'AM';
-        h = h % 12;
-        h = h ? h : 12; // the hour '0' should be '12'
-        m = checkTime(m);
-        timeEl.forEach(item => {
-            item.innerHTML = h + ":" + m + " " + ampm;
-
+        const dhakaTime = new Intl.DateTimeFormat('en-US', {
+            timeZone: 'Asia/Dhaka', hour: 'numeric', minute: '2-digit', hour12: true
+        }).format(new Date());
+        document.querySelectorAll('.realtime').forEach(item => {
+            item.textContent = dhakaTime;
         });
-        var t = setTimeout(startTime, 500);
+        setTimeout(startTime, 1000);
     }
-    
-    function checkTime(i) {
-        if (i < 10) {
-            i = "0" + i;
-        }  // add zero in front of numbers < 10
-        return i;
-    }
-
+    document.querySelectorAll('[data-year]').forEach(item => {
+        item.textContent = new Intl.DateTimeFormat('en', {
+            timeZone: 'Asia/Dhaka', year: 'numeric'
+        }).format(new Date());
+    });
 
     // Custom Mouse Cursor for Work
     if (document.querySelectorAll('.work-box')) {
@@ -110,14 +101,18 @@ $(function () {
     if ($('.show-navigation-popover').length) {
         $(document).on('click', '.show-navigation-popover', function (e) {
             e.preventDefault();
-            $('.popup-menu-wrap').addClass('active');
+            $('.popup-menu-wrap').addClass('active').attr('aria-hidden', 'false');
+            $('.show-navigation-popover').attr('aria-expanded', 'true');
+            document.querySelector('.close-navigation-btn').focus();
             $('body').css({
                 overflow: 'hidden'
             })
         });
         $(document).on('click', '.close-navigation-btn', function (e) {
             e.preventDefault();
-            $('.popup-menu-wrap').removeClass('active');
+            $('.popup-menu-wrap').removeClass('active').attr('aria-hidden', 'true');
+            $('.show-navigation-popover').attr('aria-expanded', 'false');
+            document.querySelector('.show-navigation-popover').focus();
             $('body').css({
                 overflowX: 'hidden',
                 overflowY: 'auto'
@@ -167,9 +162,7 @@ $(function () {
 
 
 
-    window.addEventListener('scroll', {
-        scroll_animations
-    });
+    // ScrollTrigger manages scroll updates after scroll_animations initializes on load.
 
 
 
@@ -459,65 +452,65 @@ $(function () {
 
 
 
-    // Contact Form
-    const form = document.getElementById("contactForm");
-    const result = document.getElementById("result");
-
+    // Prepare an email draft until a studio-owned form delivery service is configured.
+    // No form fields are sent to the inherited template's third-party account.
+    const form = document.getElementById('contactForm');
+    const result = document.getElementById('result');
     if (form) {
-        form.addEventListener("submit", function (e) {
-            const formData = new FormData(form);
-            e.preventDefault();
-            var object = {};
-            formData.forEach((value, key) => {
-                object[key] = value;
-            });
-            if (object.email == '') {
-                result.innerHTML = 'Email field is required!';
-                return;
-            }
-            var json = JSON.stringify(object);
-            result.innerHTML = "Please wait...";
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+            if (!form.reportValidity()) return;
+            const data = new FormData(form);
+            const name = [data.get('first_name'), data.get('last_name')].filter(Boolean).join(' ');
+            const body = [
+                'Name: ' + name,
+                'Email: ' + data.get('email'),
+                'Creating for: ' + data.get('company_type'),
+                'Budget: ' + (data.get('budget') || 'To discuss'),
+                '', data.get('message')
+            ].join('\n');
             result.style.display = 'block';
-
-            fetch("https://api.web3forms.com/submit", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    Accept: "application/json"
-                },
-                body: json
-            })
-                .then(async (response) => {
-                    let json = await response.json();
-                    if (response.status == 200) {
-                        result.style.display = "block";
-                        result.innerHTML = json.message;
-                        result.classList.remove("text-gray-500");
-                        result.classList.add("text-green-500");
-                    } else {
-                        result.style.display = "block";
-                        console.log(response);
-                        result.innerHTML = json.message;
-                        result.classList.remove("text-gray-500");
-                        result.classList.add("text-red-500");
-                    }
-                })
-                .catch((error) => {
-                    console.log(error);
-                    result.style.display = "block";
-                    result.innerHTML = "Something went wrong!";
-                })
-                .then(function () {
-                    form.reset();
-                    setTimeout(() => {
-                        result.style.display = "none";
-                    }, 5000);
-                });
+            result.textContent = 'Opening an email draft. Review it and press Send in your email app. If nothing opens, email studioembrwave@gmail.com directly.';
+            window.location.href = 'mailto:studioembrwave@gmail.com?subject=' +
+                encodeURIComponent('New project inquiry — ' + name) + '&body=' + encodeURIComponent(body);
         });
     }
-
-        
-
+    document.querySelectorAll('[data-comment-draft]').forEach(commentForm => {
+        commentForm.addEventListener('submit', event => {
+            event.preventDefault();
+            if (!commentForm.reportValidity()) return;
+            const data = new FormData(commentForm);
+            const body = ['Article: ' + document.title, 'Name: ' + (data.get('name') || ''),
+                'Email: ' + (data.get('email') || ''), '', data.get('comment')].join('\n');
+            window.location.href = 'mailto:studioembrwave@gmail.com?subject=' +
+                encodeURIComponent('Thoughts from the Embrwave Journal') + '&body=' + encodeURIComponent(body);
+        });
+    });
+    const journalEntries = [...document.querySelectorAll('[data-journal-entry]')];
+    const query = (new URLSearchParams(window.location.search).get('s') || '').trim().toLocaleLowerCase();
+    if (journalEntries.length && query) {
+        journalEntries.forEach(entry => {
+            entry.hidden = !entry.textContent.toLocaleLowerCase().includes(query);
+        });
+        const empty = document.querySelector('.journal-empty');
+        if (empty) empty.hidden = journalEntries.some(entry => !entry.hidden);
+    }
+    document.addEventListener('keydown', event => {
+        const menu = document.querySelector('.popup-menu-wrap.active');
+        if (!menu) return;
+        if (event.key === 'Escape') {
+            event.preventDefault();
+            document.querySelector('.close-navigation-btn').click();
+        } else if (event.key === 'Tab') {
+            const links = [...menu.querySelectorAll('a[href], button')];
+            const first = links[0], last = links[links.length - 1];
+            if (event.shiftKey && document.activeElement === first) {
+                event.preventDefault(); last.focus();
+            } else if (!event.shiftKey && document.activeElement === last) {
+                event.preventDefault(); first.focus();
+            }
+        }
+    });
 
 });
 

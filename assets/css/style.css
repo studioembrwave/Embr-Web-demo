@@ -3,7 +3,7 @@
     --darkBg: #000000;
     --whiteColor: #ffffff;
     --whiteBg: #ffffff;
-    --primary: #2323FF;
+    --primary: #2323ff;
     --paragraph: rgba(29, 29, 31, 0.7);
     --font_inter_tight: "Inter Tight", sans-serif;
     --font_inter: "Inter", system-ui;
@@ -307,8 +307,8 @@ a.link-with-border:hover {
     overflow: hidden;
 }
 .preloader-bar-wrap .preloader-bar {
-    /* background: linear-gradient(89.99deg, #B0FF4B %200.01%, %20 rgba(176,%20255,%2075,%200) %2073.84%); */
-    background: linear-gradient(89.99deg, #b0ff4b00, #B0FF4B);
+    /* background: linear-gradient(89.99deg, #2323ff %200.01%, %20 rgba(176,%20255,%2075,%200) %2073.84%); */
+    background: linear-gradient(89.99deg, #2323ff00, #2323ff);
     position: absolute;
     right: 0;
     top: 0;
@@ -988,7 +988,7 @@ a.link-with-border:hover {
     align-items: center;
     gap: 7px;
     font-size: 18px;
-    color: #FFD700;
+    color: #2323ff;
     justify-content: center;
 }
 .service-ratings span {

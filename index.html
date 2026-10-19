@@ -13,20 +13,19 @@
         <title>Embrwave Studios — More Than Editing</title>
     
         <!-- ===== LineAwesome ===== -->
-        <link rel="stylesheet"
-            href="./assets/css/line-awesome.min.css">
+        <link rel="stylesheet" href="./assets/css/line-awesome.min.css">
     
     
         <!-- ===== Fonts ===== -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet">
     
         <!-- ===== Stylesheet ===== -->
         <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="./assets/css/style.css">
         <link rel="stylesheet" href="./assets/css/responsive.css">
-    </head>
+    <link rel="stylesheet" href="./assets/css/embrwave.css"><meta name="description" content="Embrwave Studios is a Dhaka-based creative studio bringing video editing, motion graphics, brand design, and social content together."></head>
 <body>
     <!-- ===== Magic Cursor Start ===== -->
     <div id="magic-cursor">
@@ -37,7 +36,7 @@
     <!-- ===== Pre Loader Start ===== -->
     <div class="preloader-wrap">
         <div class="preloader-content">
-            <div class="logo">Embrwave <img src="./assets/imgs/r.svg" alt="Symble"></div>
+            <div class="logo">Embrwave <img src="./assets/imgs/r.svg" alt="" aria-hidden="true"></div>
             <div class="preloader-bar-wrap">
                 <div class="preloader-bar"></div>
             </div>
@@ -50,16 +49,14 @@
     <main class="page-main home-page">
 
         <!-- ===== Popover Menu Start ===== -->
-        <div class="popup-menu-wrap">
+        <div class="popup-menu-wrap" id="site-menu" aria-hidden="true">
             <div class="popup-menu-header">
                 <div class="left">
-                    <a href="./index.html" class="logo">Embrwave <img src="./assets/imgs/r.svg" alt="Symble"></a>
-                    <div class="location-and-time">
-                       Dhaka, Bangladesh / <span class="realtime"></span>
-                    </div>
+                    <a href="./index.html" class="logo">Embrwave <img src="./assets/imgs/r.svg" alt="" aria-hidden="true"></a>
+                    <div class="location-and-time">Dhaka, Bangladesh / <span class="realtime" aria-label="Current time in Dhaka"></span></div>
                 </div>
 
-                <a href="#" class="close-navigation-btn theme-btn primary-bg">X CLOSE</a>
+                <a href="#" class="close-navigation-btn theme-btn primary-bg" role="button">Close</a>
             </div>
             <div class="popup-menu">
                 <nav>
@@ -79,13 +76,13 @@
                         <li>
                             <a href="blog.html">
                                 <span class="count">[03]</span>
-                                <span>Blog</span>
+                                <span>Journal</span>
                             </a>
                         </li>
                         <li>
                             <a href="pricing.html">
                                 <span class="count">[04]</span>
-                                <span>Pricing</span>
+                                <span>Packages</span>
                             </a>
                         </li>
                         <li>
@@ -99,22 +96,9 @@
             </div>
             <div class="popup-menu-footer">
                 <div class="copyright">
-                    <p>©2024 ALL RIGHTS RESERVED</p>
+                    <p>©<span data-year>2026</span> Embrwave Studios. All rights reserved.</p>
 
-                    <ul class="social-links-text">
-                        <li><a href="https://instagram.com" class="splite-text-anim">
-                            <span>Instagram <img src="./assets/imgs/arrow.svg" alt="Icon"></span>
-                            <span>Instagram <img src="./assets/imgs/arrow.svg" alt="Icon"></span>
-                        </a></li>
-                        <li><a href="https://twitter.com" class="splite-text-anim">
-                            <span>Twitter <img src="./assets/imgs/arrow.svg" alt="Icon"></span>
-                            <span>Twitter <img src="./assets/imgs/arrow.svg" alt="Icon"></span>
-                        </a></li>
-                        <li><a href="https://facebook.com" class="splite-text-anim">
-                            <span>Facebook <img src="./assets/imgs/arrow.svg" alt="Icon"></span>
-                            <span>Facebook <img src="./assets/imgs/arrow.svg" alt="Icon"></span>
-                        </a></li>
-                    </ul>
+                    <ul class="social-links-text"><li><a href="mailto:studioembrwave@gmail.com">Email Embrwave</a></li><li class="social-pending">Social profiles coming soon</li></ul>
 
                 </div>
             </div>
@@ -130,26 +114,18 @@
                     <div class="container">
                         <div class="hero-sec-top scroll-animation" data-animation="slide_up">
                             <div class="hero-left">
-                                <a href="./index.html" class="logo">Embrwave <img src="./assets/imgs/r.svg" alt="Symble"></a>
-                                <div class="location-and-time">
-                                    Dhaka, Bangladesh / <span class="realtime"></span>
-                                </div>
+                                <a href="./index.html" class="logo">Embrwave <img src="./assets/imgs/r.svg" alt="" aria-hidden="true"></a>
+                                <div class="location-and-time">Dhaka, Bangladesh / <span class="realtime" aria-label="Current time in Dhaka"></span></div>
                             </div>
                             <div class="hero-right">
                                 <nav class="main-menu">
                                     <ul>
-                                        <li><a href="./work.html" class="splite-text-anim">
-                                            <span>( Works )</span>
-                                            <span>( Works )</span>
-                                        </a></li>
-                                        <li><a href="./contact.html" class="splite-text-anim">
-                                            <span>( Start a Project )</span>
-                                            <span>( Start a Project )</span>
-                                        </a></li>
+                                        <li><a href="./work.html" class="splite-text-anim"><span>Our work</span><span aria-hidden="true">Our work</span></a></li>
+                                        <li><a href="./contact.html" class="splite-text-anim"><span>Start a project</span><span aria-hidden="true">Start a project</span></a></li>
                                     </ul>
                                 </nav>
 
-                                <a href="#" class="show-navigation-popover theme-btn">NAVIGATION MENU</a>
+                                <a href="#" class="show-navigation-popover theme-btn" role="button" aria-expanded="false" aria-controls="site-menu">Menu</a>
 
                             </div>
                         </div>
@@ -157,29 +133,19 @@
                         <!-- Hero Bottom -->
                         <div class="hero-sec-bottom">
                             <div class="hero-sec-bottom-left">
-                                <span class="subtitle">
-                                    <img src="./assets/imgs/clock.svg" alt="Clock">
-                                    Creative Artistry
-                                </span>
-                                <h1 class="hero-title with-circle-shape">
-                                    <span class="overflow-hidden"><span class="timeline-anim scroll-animation" data-animation="slide_down">Visual<img class="white-circle-shape" src="./assets/imgs/white-circle-shape.svg" alt="shape"></span></span>
-                                    <span class="overflow-hidden"><span class="timeline-anim scroll-animation" data-animation="slide_down"  data-animation-delay="0.2">Studio</span></span>
-
-                                    <span class="circle-primary-shape scroll-animation" data-animation="embrwave_zoom_in" data-animation-delay="0.5"></span>
-                                </h1>
-                            </div>
+                                <span class="subtitle">Video editing · Motion · Design</span>
+                                <h1 class="hero-title with-circle-shape"><span class="overflow-hidden heading-line"><span class="timeline-anim scroll-animation" data-animation="slide_down" data-animation-delay="0.0">More than<img class="white-circle-shape hero-dots" src="./assets/imgs/white-circle-shape.svg" alt="" aria-hidden="true"></span></span>
+<span class="overflow-hidden heading-line"><span class="timeline-anim scroll-animation" data-animation="slide_down" data-animation-delay="0.12">editing.<span class="circle-primary-shape scroll-animation" data-animation="embrwave_zoom_in" data-animation-delay="0.5" aria-hidden="true"></span></span></span>
+</h1>
+                            <a href="./contact.html" class="theme-btn primary-bg hero-project-link">Start a project</a></div>
                             <div class="hero-sec-bottom-right">
                                 <div class="hero-sec-bottom-right-content-top">
-                                    <video width="225" height="127" src="./assets/video/framer-video.mp4" loop muted autoplay playsinline=""></video>
+                                    <video width="225" height="127" src="./assets/video/framer-video.mp4" loop muted autoplay playsinline="" aria-label="Embrwave studio reel" preload="metadata"></video>
 
                                     
-                                    <p>Embrwave® is a multidisciplinary creative studio specializing in cinematic visuals,
-                                        refined brand identities & high end digital experiences.</p>
+                                    <p>We turn footage, ideas, and brand stories into visual work with purpose. From the first cut to the final detail, Embrwave brings editing, motion, and design together.</p>
                                 </div>
-                                <a href="./work.html" class="link-with-border splite-text-anim">
-                                    <span>SEE ALL PROJECTS (17+)</span>
-                                    <span>SEE ALL PROJECTS (17+)</span>
-                                </a>
+                                <a href="./work.html" class="link-with-border splite-text-anim"><span>Explore our work</span><span aria-hidden="true">Explore our work</span></a>
                             </div>
                         </div>
                     </div>
@@ -191,14 +157,13 @@
                     <div class="container">
                         <div class="hero-banner-img-inner">
                             <div class="hero-banner-img full-image-box">
-                                <img data-jarallax-element="-20 0" src="./assets/imgs/hero-banner.jpg" alt="Banner">
+                                <img data-jarallax-element="-20 0" src="./assets/imgs/hero-banner.jpg" alt="Visual placeholder — final studio assets to be added">
                             </div>
                         </div>
                         <div class="hero-banner-content">
-                            <p>Embrwave Studios® is an independent creative studio shaping
-                                brands and redefining visual storytelling through artistic expression.</p>
+                            <p>A story worth telling deserves more than a cut. It deserves rhythm, character, and a reason to keep watching.</p>
 
-                            <span class="link-with-border">All rights reserved &copy;</span>
+                            <span class="link-with-border">Made with intention. By Embrwave.</span>
                         </div>
                     </div>
                 </div>
@@ -213,10 +178,8 @@
                                 <span class="overflow-hidden"><span class="timeline-anim scroll-animation" data-animation="slide_down">WORK</span></span>
                             </h2>
                             <div class="section-header-right">
-                                <div class="section-subtitle"><span class="white-circle"></span> <span class="theme-btn primary-bg">EXPLORE</span></div>
-                                <p>Gorgeous design, Scroll-stopping content, Memorable
-                                    campaigns, Development dripping with tech. The proof 
-                                    is in our projects.</p>
+                                <div class="section-subtitle"><span class="white-circle"></span> <span class="theme-btn primary-bg">Explore Embrwave</span></div>
+                                <p>A selection of stories, identities, and visual experiences. Different formats. Different briefs. The same attention to what makes each idea worth seeing.</p>
                             </div>
                         </div>
 
@@ -224,120 +187,90 @@
                         <div class="work-lists">
                             <div class="work-box scroll-animation" data-animation="fade_from_bottom2">
                                 <div class="hover_mouse">
-                                    <a href="./work-single.html">
-                                        View
-                                    </a>
+                                    <a href="./work-single.html" aria-label="Explore Brand Film — portfolio preview">Explore project</a>
                                 </div>
-                                <a href="./work-single.html" class="overlay"></a>
+                                <a href="./work-single.html" class="overlay" aria-label="Explore Brand Film — portfolio preview"></a>
                                 <div class="work-img">
-                                    <img src="./assets/imgs/work-1.png" alt="Work">
+                                    <img src="./assets/imgs/work-1.png" alt="Brand Film portfolio placeholder">
                                 </div>
                                 <div class="work-bottom-content">
-                                    <span class="work-price">
-                                        (cost® — $7000) <br>
-                                        World Surf League
-                                    </span>
-                                    <span class="work-cat">(UX/UI DESIGN)</span>
+                                    <span class="work-price">[Client / project] · [Year] — Brand Film</span>
+                                    <span class="work-cat">Video Editing &amp; Storytelling</span>
                                     <span class="work-number">[01]</span>
                                 </div>
                             </div>
                             <div class="work-box scroll-animation" data-animation="fade_from_bottom2" data-animation-delay="0.2">
                                 <div class="hover_mouse">
-                                    <a href="./work-single-2.html">
-                                        View
-                                    </a>
+                                    <a href="./work-single-2.html" aria-label="Explore Social Campaign — portfolio preview">Explore project</a>
                                 </div>
-                                <a href="./work-single-2.html" class="overlay"></a>
+                                <a href="./work-single-2.html" class="overlay" aria-label="Explore Social Campaign — portfolio preview"></a>
                                 <div class="work-img">
-                                    <img src="./assets/imgs/work-2.png" alt="Work">
+                                    <img src="./assets/imgs/work-2.png" alt="Social Campaign portfolio placeholder">
                                 </div>
                                 <div class="work-bottom-content">
-                                    <span class="work-price">
-                                        (cost® — $8500) <br>
-                                        panda
-                                    </span>
-                                    <span class="work-cat">(branding)</span>
+                                    <span class="work-price">[Client / project] · [Year] — Social Campaign</span>
+                                    <span class="work-cat">Short-form Content</span>
                                     <span class="work-number">[02]</span>
                                 </div>
                             </div>
                             <div class="work-box scroll-animation" data-animation="fade_from_bottom2">
                                 <div class="hover_mouse">
-                                    <a href="./work-single-3.html">
-                                        View
-                                    </a>
+                                    <a href="./work-single-3.html" aria-label="Explore Motion Study — portfolio preview">Explore project</a>
                                 </div>
-                                <a href="./work-single-3.html" class="overlay"></a>
+                                <a href="./work-single-3.html" class="overlay" aria-label="Explore Motion Study — portfolio preview"></a>
                                 <div class="work-img">
-                                    <img src="./assets/imgs/work-3.png" alt="Work">
+                                    <img src="./assets/imgs/work-3.png" alt="Motion Study portfolio placeholder">
                                 </div>
                                 <div class="work-bottom-content">
-                                    <span class="work-price">
-                                        (cost® — $7000) <br>
-                                        MARTIN LUKO
-                                    </span>
-                                    <span class="work-cat">(PORTFOLIO)</span>
+                                    <span class="work-price">[Client / project] · [Year] — Motion Study</span>
+                                    <span class="work-cat">Motion Graphics</span>
                                     <span class="work-number">[03]</span>
                                 </div>
                             </div>
                             <div class="work-box scroll-animation" data-animation="fade_from_bottom2" data-animation-delay="0.2">
                                 <div class="hover_mouse">
-                                    <a href="./work-single-4.html">
-                                        View
-                                    </a>
+                                    <a href="./work-single-4.html" aria-label="Explore Product Campaign — portfolio preview">Explore project</a>
                                 </div>
-                                <a href="./work-single-4.html" class="overlay"></a>
+                                <a href="./work-single-4.html" class="overlay" aria-label="Explore Product Campaign — portfolio preview"></a>
                                 <div class="work-img">
-                                    <img src="./assets/imgs/work-4.png" alt="Work">
+                                    <img src="./assets/imgs/work-4.png" alt="Product Campaign portfolio placeholder">
                                 </div>
                                 <div class="work-bottom-content">
-                                    <span class="work-price">
-                                        (cost® — $6000) <br>
-                                        olipop tech
-                                    </span>
-                                    <span class="work-cat">(technology)</span>
+                                    <span class="work-price">[Client / project] · [Year] — Product Campaign</span>
+                                    <span class="work-cat">Campaign Creative</span>
                                     <span class="work-number">[04]</span>
                                 </div>
                             </div>
                             <div class="work-box scroll-animation" data-animation="fade_from_bottom2">
                                 <div class="hover_mouse">
-                                    <a href="./work-single-5.html">
-                                        View
-                                    </a>
+                                    <a href="./work-single-5.html" aria-label="Explore Brand Identity — portfolio preview">Explore project</a>
                                 </div>
-                                <a href="./work-single-5.html" class="overlay"></a>
+                                <a href="./work-single-5.html" class="overlay" aria-label="Explore Brand Identity — portfolio preview"></a>
                                 <div class="work-img">
-                                    <img src="./assets/imgs/work-5.png" alt="Work">
+                                    <img src="./assets/imgs/work-5.png" alt="Brand Identity portfolio placeholder">
                                 </div>
                                 <div class="work-bottom-content">
-                                    <span class="work-price">
-                                        (cost® — $6000) <br>
-                                        little black book
-                                    </span>
-                                    <span class="work-cat">(Digital design)</span>
+                                    <span class="work-price">[Client / project] · [Year] — Brand Identity</span>
+                                    <span class="work-cat">Graphic &amp; Brand Design</span>
                                     <span class="work-number">[05]</span>
                                 </div>
                             </div>
                             <div class="work-box scroll-animation" data-animation="fade_from_bottom2" data-animation-delay="0.2">
                                 <div class="hover_mouse">
-                                    <a href="./work-single-6.html">
-                                        View
-                                    </a>
+                                    <a href="./work-single-6.html" aria-label="Explore Creator Content — portfolio preview">Explore project</a>
                                 </div>
-                                <a href="./work-single-6.html" class="overlay"></a>
+                                <a href="./work-single-6.html" class="overlay" aria-label="Explore Creator Content — portfolio preview"></a>
                                 <div class="work-img">
-                                    <img src="./assets/imgs/work-6.png" alt="Work">
+                                    <img src="./assets/imgs/work-6.png" alt="Creator Content portfolio placeholder">
                                 </div>
                                 <div class="work-bottom-content">
-                                    <span class="work-price">
-                                        (cost® — $6000) <br>
-                                        GEARBOARD
-                                    </span>
-                                    <span class="work-cat">(Digital)</span>
+                                    <span class="work-price">[Client / project] · [Year] — Creator Content</span>
+                                    <span class="work-cat">Creator Content</span>
                                     <span class="work-number">[06]</span>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    <p class="content-notice">Portfolio preview: project names, images, and client details will be added here.</p></div>
                 </section>
                 <!-- ===== Service Area End ===== -->
                 
@@ -346,74 +279,45 @@
                     <div class="container">
                         <div class="section-header">
                             <div class="left">
-                                <h2 class="title">
-                                    <span class="overflow-hidden"><span class="timeline-anim scroll-animation" data-animation="slide_down">about Embrwave</span></span>
-                                </h2>
-                                <p>from toronto - based  startup to global <span class="border-bottom">visual design studio</span></p>
+                                <h2 class="title"><span class="overflow-hidden heading-line"><span class="timeline-anim scroll-animation" data-animation="slide_down" data-animation-delay="0.0">This is</span></span>
+<span class="overflow-hidden heading-line"><span class="timeline-anim scroll-animation" data-animation="slide_down" data-animation-delay="0.12">Embrwave.</span></span>
+</h2>
+                                <p>A creative studio in Dhaka, Bangladesh, working where story, motion, and design meet.</p>
                             </div>
                             <div class="section-header-right">
-                                <div class="section-subtitle"><span class="white-circle"></span> <span class="theme-btn primary-bg">let’s work together</span></div>
+                                <div class="section-subtitle"><span class="white-circle"></span> <span class="theme-btn primary-bg">Get to know us</span></div>
                             </div>
                         </div>
 
                         <div class="custom-row">
                             <div class="about-left-img">
-                                <img src="./assets/imgs/about.png" alt="About">
+                                <img src="./assets/imgs/about.png" alt="Visual placeholder — final studio assets to be added">
                             </div>
 
                             <div class="about-content">
-                                <span class="about-title">[ ABOUT ME ]</span>
-                                <p>At Embrwave, we transform the way growing brands and <br>
-                                    Fortune 50’s show up across modern Media. Our <br>
-                                    team has a healthy obsession with motion. We live it, <br>
-                                    breathe it, and completely embrace its ability to <br>
-                                    capture the heart of your brand.</p>
+                                <span class="about-title">The studio</span>
+                                <p>Embrwave is a multidisciplinary creative studio built around a simple belief: good visual work does more than look polished. It communicates something. We bring together video editing, motion graphics, graphic design, and creative thinking to help brands, creators, and businesses express their ideas. Every frame, transition, and design decision should have a reason to be there.</p>
 
                                 <div class="about-awards-wrap">
-                                    <h6>Honourable mention on <span>Awwwards&copy;</span></h6>
+                                    <h6>What we stand for</h6>
 
                                     <div class="awards-list">
-                                        <a href="#" class="award-box active">
-                                            AWWWARD JURY
-                                            <span class="award-year">
-                                                <img src="./assets/imgs/angle-arrow.svg" alt="Arrow">
-                                                <span>2024</span>
-                                            </span>
-                                        </a>
-                                        <a href="#" class="award-box">
-                                            STUDIO OF THE YEAR
-                                            <span class="award-year">
-                                                <img src="./assets/imgs/angle-arrow.svg" alt="Arrow">
-                                                <span>2023</span>
-                                            </span>
-                                        </a>
-                                        <a href="#" class="award-box">
-                                            D & AD AWARDS
-                                            <span class="award-year">
-                                                <img src="./assets/imgs/angle-arrow.svg" alt="Arrow">
-                                                <span>2021, 2022</span>
-                                            </span>
-                                        </a>
-                                        <a href="#" class="award-box">
-                                            RED DOT DESIGN AWARDS
-                                            <span class="award-year">
-                                                <img src="./assets/imgs/angle-arrow.svg" alt="Arrow">
-                                                <span>2021</span>
-                                            </span>
-                                        </a>
+                                        <div class="award-box active">Story first<span class="award-year">Start with what matters</span></div>
+                                        <div class="award-box">Purposeful design<span class="award-year">Give every choice a reason</span></div>
+                                        <div class="award-box">Clear collaboration<span class="award-year">Make room for useful feedback</span></div>
+                                        <div class="award-box">Care in the details<span class="award-year">Finish with intention</span></div>
                                     </div>
                                 </div>
 
                                 <div class="about-mission">
-                                    <span class="about-title">[ MY MISSION ]</span>
-                                    <p>Transforming how brands express themselves across 
-                                        modern media.</p>
+                                    <span class="about-title">Our mission</span>
+                                    <p>Help people turn what they want to say into visual work that feels clear, considered, and distinctly theirs.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="about-bottom">
-                            <a href="https://drive.google.com/file/d/1Issw97gs-kreC7QWev66jO6YC2FdF0L0/view" target="_blank" class="theme-btn" download>Download Resume</a>
-                            <span class="est-date">[ est. 2012 ]</span>
+                            <a href="./service.html" class="theme-btn">Explore our services</a>
+                            <span class="est-date">Independent thinking. Shared creative energy.</span>
                         </div>
                     </div>
                 </section>
@@ -424,23 +328,23 @@
                     <div class="container">
                         <div class="client-logo-slide-wrap">
                             <div class="client-logo-slide">
-                                <img src="./assets/imgs/client-1.svg" alt="Client">
-                                <img src="./assets/imgs/client-2.svg" alt="Client">
-                                <img src="./assets/imgs/client-3.svg" alt="Client">
-                                <img src="./assets/imgs/client-4.svg" alt="Client">
-                                <img src="./assets/imgs/client-5.svg" alt="Client">
-                                <img src="./assets/imgs/client-6.svg" alt="Client">
-                                <img src="./assets/imgs/client-7.svg" alt="Client">
-                                <img src="./assets/imgs/client-1.svg" alt="Client">
-                                <img src="./assets/imgs/client-2.svg" alt="Client">
-                                <img src="./assets/imgs/client-3.svg" alt="Client">
-                                <img src="./assets/imgs/client-4.svg" alt="Client">
-                                <img src="./assets/imgs/client-5.svg" alt="Client">
-                                <img src="./assets/imgs/client-6.svg" alt="Client">
-                                <img src="./assets/imgs/client-7.svg" alt="Client">
+                                <img src="./assets/imgs/client-1.svg" alt="Visual placeholder — final studio assets to be added">
+                                <img src="./assets/imgs/client-2.svg" alt="Visual placeholder — final studio assets to be added">
+                                <img src="./assets/imgs/client-3.svg" alt="Visual placeholder — final studio assets to be added">
+                                <img src="./assets/imgs/client-4.svg" alt="Visual placeholder — final studio assets to be added">
+                                <img src="./assets/imgs/client-5.svg" alt="Visual placeholder — final studio assets to be added">
+                                <img src="./assets/imgs/client-6.svg" alt="Visual placeholder — final studio assets to be added">
+                                <img src="./assets/imgs/client-7.svg" alt="Visual placeholder — final studio assets to be added">
+                                <img src="./assets/imgs/client-1.svg" alt="Visual placeholder — final studio assets to be added">
+                                <img src="./assets/imgs/client-2.svg" alt="Visual placeholder — final studio assets to be added">
+                                <img src="./assets/imgs/client-3.svg" alt="Visual placeholder — final studio assets to be added">
+                                <img src="./assets/imgs/client-4.svg" alt="Visual placeholder — final studio assets to be added">
+                                <img src="./assets/imgs/client-5.svg" alt="Visual placeholder — final studio assets to be added">
+                                <img src="./assets/imgs/client-6.svg" alt="Visual placeholder — final studio assets to be added">
+                                <img src="./assets/imgs/client-7.svg" alt="Visual placeholder — final studio assets to be added">
                             </div>
                         </div>
-                    </div>
+                    <p class="content-notice">Client and collaborator logos will be added with permission.</p></div>
                 </div>
                 <!-- ===== Clients Area End ===== -->
                 
@@ -448,62 +352,44 @@
                 <section class="process-sec">
                     <div class="container">
                         <div class="section-header-2">
-                            <h6>Let me show HOW i do</h6>
-                            <h2 class="section-title2">
-                                <span class="overflow-hidden"><span class="timeline-anim scroll-animation" data-animation="slide_down">discover MY work method</span></span>
-                            </h2>
-                            <h6>[ &copy;elevate your visual design with expert techniques and advicE ]</h6>
+                            <h6>From first conversation to final delivery</h6>
+                            <h2 class="section-title2"><span class="overflow-hidden heading-line"><span class="timeline-anim scroll-animation" data-animation="slide_down" data-animation-delay="0.0">How we</span></span>
+<span class="overflow-hidden heading-line"><span class="timeline-anim scroll-animation" data-animation="slide_down" data-animation-delay="0.12">make it happen.</span></span>
+</h2>
+                            <h6>A clear brief. A shared direction. Thoughtful execution.</h6>
                         </div>
 
                         <div class="custom-row">
                             <div class="process-img sticky-statement">
-                                <img src="./assets/imgs/process.png" alt="Process">
+                                <img src="./assets/imgs/process.png" alt="Visual placeholder — final studio assets to be added">
                             </div>
 
                             <div class="process-lists">
                                 <div class="process-box">
                                     <span class="number">[ 01 ]</span>
                                     <div class="process-box-content">
-                                        <img src="./assets/imgs/process-icon-1.svg" alt="Icon">
-                                        <h4>planning</h4>
-                                        <p>Before we start, we determine if and how I can help you. What 
-                                            are your requirements for your new design? Why do you need
-                                            a new design? What goals do you have in that, and what problem 
-                                            can we solve with a new design?</p>
-                                        <ul>
-                                            <li>-  We get to know each other better</li>
-                                            <li>-  Determine how i can best assist you</li>
-                                            <li>-  Understand the goals you have for the work</li>
-                                        </ul>
+                                        <img src="./assets/imgs/process-icon-1.svg" alt="" aria-hidden="true">
+                                        <h4>Understand</h4>
+                                        <p>We start with the idea behind the project. What do you want to communicate? Who is it for? Where will it appear? We look at your goals, references, and available material before deciding what the work needs.</p>
+                                        <ul><li>Understand your audience and objective</li><li>Review the brief, references, and assets</li><li>Agree on scope, deliverables, and timing</li></ul>
                                     </div>
                                 </div>
                                 <div class="process-box">
                                     <span class="number">[ 02 ]</span>
                                     <div class="process-box-content">
-                                        <img src="./assets/imgs/process-icon-2.svg" alt="Icon">
-                                        <h4>concept & strategy</h4>
-                                        <p>Once we have assessed your requirements and objectives, 
-                                            we move into the concept and strategy phase. Here, we define 
-                                            the overall vision and strategic approach for your design
-                                            project. What are the core ideas we want to develop?</p>
-                                        <ul>
-                                            <li>-  UX/UI Design</li>
-                                            <li>-  Wireframes</li>
-                                            <li>-  Interactive Prototype</li>
-                                        </ul>
+                                        <img src="./assets/imgs/process-icon-2.svg" alt="" aria-hidden="true">
+                                        <h4>Shape</h4>
+                                        <p>We build a creative direction around the brief. That might mean finding the story in your footage, developing a visual approach, or planning how a piece will move. The goal is to make the important choices clear before taking them further.</p>
+                                        <ul><li>Establish the story and visual direction</li><li>Plan structure, pacing, and key moments</li><li>Align on the approach before production develops</li></ul>
                                     </div>
                                 </div>
                                 <div class="process-box">
                                     <span class="number">[ 03 ]</span>
                                     <div class="process-box-content">
-                                        <img src="./assets/imgs/process-icon-3.svg" alt="Icon">
-                                        <h4>design onboarding</h4>
-                                        <p>I’m thrilled to embark on this creative journey with you. My mission is to bring your vision to life with a collaborativeand personalised design process.</p>
-                                        <ul>
-                                            <li>-  Personal Workshop</li>
-                                            <li>-  Personalised Video Tutorials</li>
-                                            <li>-  Edit Text and Images directly on Website</li>
-                                        </ul>
+                                        <img src="./assets/imgs/process-icon-3.svg" alt="" aria-hidden="true">
+                                        <h4>Create &amp; refine</h4>
+                                        <p>We bring the direction to life, share work for review, and refine it through focused feedback. Before delivery, we check that the agreed outputs are prepared for their intended platforms and uses.</p>
+                                        <ul><li>Create and share the work</li><li>Refine through agreed review rounds</li><li>Prepare the final files for delivery</li></ul>
                                     </div>
                                 </div>
                             </div>
@@ -516,7 +402,7 @@
                 <div class="banner-sec">
                     <div class="banner-img-inner">
                         <div class="banner-img full-image-box">
-                            <img data-jarallax-element="-20 0" src="./assets/imgs/banner.png" alt="Banner">
+                            <img data-jarallax-element="-20 0" src="./assets/imgs/banner.png" alt="Visual placeholder — final studio assets to be added">
                         </div>
                     </div>
                 </div>
@@ -528,30 +414,24 @@
                         <div class="custom-row">
                             <div class="motivation-left-content">
                                 <div class="section-header-2">
-                                    <h2 class="section-title2">
-                                        <span class="overflow-hidden"><span class="timeline-anim scroll-animation" data-animation="slide_down">MOTIVATION</span></span>
-                                    </h2>
-                                    <h6>THE JOURNEY OF CREATIVE <span class="with-border">INSPIRATION</span></h6>
+                                    <h2 class="section-title2"><span class="overflow-hidden heading-line"><span class="timeline-anim scroll-animation" data-animation="slide_down" data-animation-delay="0.0">Every frame</span></span>
+<span class="overflow-hidden heading-line"><span class="timeline-anim scroll-animation" data-animation="slide_down" data-animation-delay="0.12">has a purpose.</span></span>
+</h2>
+                                    <h6>The thinking behind the work</h6>
                                 </div>
 
-                                <span class="motivation-bottom-text">[ MY MOTO ]</span>
+                                <span class="motivation-bottom-text">What drives us</span>
                             </div>
                             <div class="motivation-right-content">
-                                <img src="./assets/imgs/signature.svg" alt="Signature" class="signature">
+                                <img src="./assets/imgs/signature.svg" alt="Visual placeholder — final studio assets to be added" class="signature">
                                 <div class="motivation-right-content-box">
-                                    <p>Creativity is the heartbeat of design. every pixel <br>
-                                        you place, and concept you bring to life is a <br>
-                                        testament to your unique vision. “Remember, each <br>
-                                        challenge is an opportunity to innovate setback is a step toward your breakthrough.”</p>
-                                    <p>Embrace the process, trust your instincts and let <br>
-                                        your passion drive you forward. Your designs have <br>
-                                        the power to inspire and leave a “Lasting impact on the World” Keep pushing boundaries and stay true to your Artistic journey— you have the ability to create something extraordinary.</p>
+                                    <p>A strong edit is more than a sequence of shots. It is a series of choices about what to show, what to leave out, and what the audience should feel. The same care belongs in a headline, a motion sequence, or a brand identity.</p>
+                                    <p>We look for the clearest expression of an idea. Sometimes that means adding energy. Sometimes it means slowing down. Sometimes the strongest choice is removing something that does not belong.</p>
                                 </div>
 
                                 <div class="motivation-quote">
-                                    <p>“Design is not just what it looks like and feels like.
-                                        Design is how it works."</p>
-                                    <span class="motivation-name">— Steve Jobs.</span>
+                                    <p>“Make every element earn its place.”</p>
+                                    <span class="motivation-name">— The Embrwave approach</span>
                                 </div>
                             </div>
                         </div>
@@ -564,14 +444,13 @@
                     <div class="container">
                         <div class="section-header">
                             <div class="left">
-                                <h2 class="title">
-                                    <span class="overflow-hidden"><span class="timeline-anim scroll-animation" data-animation="slide_down" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">Services</span></span>
-                                </h2>
-                                <p>everything starts with thorough research and iterative experimentation. 
-                                    what uses designing, ideas and developing, <span class="border-bottom">what user need</span> ©</p>
+                                <h2 class="title"><span class="overflow-hidden heading-line"><span class="timeline-anim scroll-animation" data-animation="slide_down" data-animation-delay="0.0">What we bring</span></span>
+<span class="overflow-hidden heading-line"><span class="timeline-anim scroll-animation" data-animation="slide_down" data-animation-delay="0.12">to the frame.</span></span>
+</h2>
+                                <p>Editing, motion, and design work best when they support the same idea. We bring those disciplines together around what your project needs.</p>
                             </div>
                             <div class="section-header-right">
-                                <div class="section-subtitle"><span class="white-circle"></span> <span class="theme-btn primary-bg">DISCOVER</span></div>
+                                <div class="section-subtitle"><span class="white-circle"></span> <span class="theme-btn primary-bg">Our services</span></div>
                             </div>
                         </div>
 
@@ -579,34 +458,26 @@
                         <div class="accordion service-faq-wrap" id="accordionExample">
                             <div class="accordion-item service-faq-item">
                                 <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        <img src="./assets/imgs/service-faq-icon-1.svg" alt="Icon"> ux/ui designing <span class="accordion-plus-icon"><span></span><span></span></span>
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><img src="./assets/imgs/service-faq-icon-1.svg" alt="" aria-hidden="true"> Video Editing &amp; Post-production <span class="accordion-plus-icon"><span></span><span></span></span>
                                     </button>
                                 </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                                    data-bs-parent="#accordionExample">
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <div class="accordion-content">
-                                            <p>Blending Aesthetic and Innovation, My UX/UI gives 
-                                                you a Top Notch Client.</p>
-                                            <p class="cast">Starts At <span class="border-bottom">Cost® — $2000</span></p>
+                                            <p>Give your footage a clear story, a considered pace, and a finished visual direction. We shape the material around the message and the audience.</p>
+                                            <p class="cast">Scoped around your project.</p>
                                             <div class="accordion-key-features">
-                                                <h5>[ KEY FEATURES ]</h5>
-                                                <ul>
-                                                    <li>-  Portfolio Highlights</li>
-                                                    <li>-  Client Testimonials</li>
-                                                    <li>-  Design Process</li>
-                                                </ul>
+                                                <h5>What we can bring</h5>
+                                                <ul><li>Story structure and pacing</li><li>Visual and audio finishing</li><li>Platform-ready versions</li></ul>
                                             </div>
 
-                                            <a href="./contact.html" class="theme-btn">Get Started</a>
+                                            <a href="./contact.html" class="theme-btn">Discuss your edit</a>
                                         </div>
 
                                         <div class="accordion-content-right">
                                             <span class="number">( O1 )</span>
                                             <div class="accordion-content-img">
-                                                <img src="./assets/imgs/service-accordion-img.png" alt="Accordion">
+                                                <img src="./assets/imgs/service-accordion-img.png" alt="Visual placeholder — final studio assets to be added">
                                             </div>
                                         </div>
                                     </div>
@@ -614,34 +485,26 @@
                             </div>
                             <div class="accordion-item service-faq-item">
                                 <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        <img src="./assets/imgs/service-faq-icon-2.svg" alt="Icon"> graphic design <span class="accordion-plus-icon"><span></span><span></span></span>
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><img src="./assets/imgs/service-faq-icon-2.svg" alt="" aria-hidden="true"> Motion Graphics <span class="accordion-plus-icon"><span></span><span></span></span>
                                     </button>
                                 </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                    data-bs-parent="#accordionExample">
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <div class="accordion-content">
-                                            <p>Blending Aesthetic and Innovation, My UX/UI gives 
-                                                you a Top Notch Client.</p>
-                                            <p class="cast">Starts At <span class="border-bottom">Cost® — $2000</span></p>
+                                            <p>Put ideas into motion with animated typography, graphic sequences, and visual elements that support the story.</p>
+                                            <p class="cast">Scoped around your project.</p>
                                             <div class="accordion-key-features">
-                                                <h5>[ KEY FEATURES ]</h5>
-                                                <ul>
-                                                    <li>-  Portfolio Highlights</li>
-                                                    <li>-  Client Testimonials</li>
-                                                    <li>-  Design Process</li>
-                                                </ul>
+                                                <h5>What we can bring</h5>
+                                                <ul><li>Animated titles and typography</li><li>Branded motion elements</li><li>Graphic transitions and sequences</li></ul>
                                             </div>
 
-                                            <a href="./contact.html" class="theme-btn">Get Started</a>
+                                            <a href="./contact.html" class="theme-btn">Bring an idea into motion</a>
                                         </div>
 
                                         <div class="accordion-content-right">
                                             <span class="number">( O2 )</span>
                                             <div class="accordion-content-img">
-                                                <img src="./assets/imgs/service-accordion-img-2.png" alt="Accordion">
+                                                <img src="./assets/imgs/service-accordion-img-2.png" alt="Visual placeholder — final studio assets to be added">
                                             </div>
                                         </div>
                                     </div>
@@ -649,34 +512,26 @@
                             </div>
                             <div class="accordion-item service-faq-item">
                                 <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        <img src="./assets/imgs/service-faq-icon-3.svg" alt="Icon"> web design <span class="accordion-plus-icon"><span></span><span></span></span>
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><img src="./assets/imgs/service-faq-icon-3.svg" alt="" aria-hidden="true"> Graphic &amp; Brand Design <span class="accordion-plus-icon"><span></span><span></span></span>
                                     </button>
                                 </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                    data-bs-parent="#accordionExample">
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <div class="accordion-content">
-                                            <p>Blending Aesthetic and Innovation, My UX/UI gives 
-                                                you a Top Notch Client.</p>
-                                            <p class="cast">Starts At <span class="border-bottom">Cost® — $2000</span></p>
+                                            <p>Build a visual language that makes your brand easier to recognize and your message easier to understand.</p>
+                                            <p class="cast">Scoped around your project.</p>
                                             <div class="accordion-key-features">
-                                                <h5>[ KEY FEATURES ]</h5>
-                                                <ul>
-                                                    <li>-  Portfolio Highlights</li>
-                                                    <li>-  Client Testimonials</li>
-                                                    <li>-  Design Process</li>
-                                                </ul>
+                                                <h5>What we can bring</h5>
+                                                <ul><li>Brand identity and visual direction</li><li>Campaign and promotional graphics</li><li>Digital design assets</li></ul>
                                             </div>
 
-                                            <a href="./contact.html" class="theme-btn">Get Started</a>
+                                            <a href="./contact.html" class="theme-btn">Discuss your design</a>
                                         </div>
 
                                         <div class="accordion-content-right">
                                             <span class="number">( O3 )</span>
                                             <div class="accordion-content-img">
-                                                <img src="./assets/imgs/service-accordion-img-3.png" alt="Accordion">
+                                                <img src="./assets/imgs/service-accordion-img-3.png" alt="Visual placeholder — final studio assets to be added">
                                             </div>
                                         </div>
                                     </div>
@@ -684,34 +539,26 @@
                             </div>
                             <div class="accordion-item service-faq-item">
                                 <h2 class="accordion-header" id="headingFour">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                        <img src="./assets/imgs/service-faq-icon-4.svg" alt="Icon"> brand design <span class="accordion-plus-icon"><span></span><span></span></span>
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><img src="./assets/imgs/service-faq-icon-4.svg" alt="" aria-hidden="true"> Social Content <span class="accordion-plus-icon"><span></span><span></span></span>
                                     </button>
                                 </h2>
-                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                                    data-bs-parent="#accordionExample">
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <div class="accordion-content">
-                                            <p>Blending Aesthetic and Innovation, My UX/UI gives 
-                                                you a Top Notch Client.</p>
-                                            <p class="cast">Starts At <span class="border-bottom">Cost® — $2000</span></p>
+                                            <p>Shape your message for the way people watch and scroll. We create focused content that fits the platform while keeping your brand recognizable.</p>
+                                            <p class="cast">Scoped around your project.</p>
                                             <div class="accordion-key-features">
-                                                <h5>[ KEY FEATURES ]</h5>
-                                                <ul>
-                                                    <li>-  Portfolio Highlights</li>
-                                                    <li>-  Client Testimonials</li>
-                                                    <li>-  Design Process</li>
-                                                </ul>
+                                                <h5>What we can bring</h5>
+                                                <ul><li>Short-form video edits</li><li>Social graphics and cover designs</li><li>Content adapted across formats</li></ul>
                                             </div>
 
-                                            <a href="./contact.html" class="theme-btn">Get Started</a>
+                                            <a href="./contact.html" class="theme-btn">Plan your content</a>
                                         </div>
 
                                         <div class="accordion-content-right">
                                             <span class="number">( O4 )</span>
                                             <div class="accordion-content-img">
-                                                <img src="./assets/imgs/service-accordion-img-4.png" alt="Accordion">
+                                                <img src="./assets/imgs/service-accordion-img-4.png" alt="Visual placeholder — final studio assets to be added">
                                             </div>
                                         </div>
                                     </div>
@@ -722,20 +569,20 @@
                         <!-- Service FunFacts -->
                         <div class="service-funfacts">
                             <div class="service-funfact-box">
-                                <h4 class="counter">8+</h4>
-                                <p>[ years of experience ] </p>
+                                <h4 class="counter">Story</h4>
+                                <p>A clear idea behind the work</p>
                             </div>
                             <div class="service-funfact-box">
-                                <h4 class="counter">200+</h4>
-                                <p>[ project done ]</p>
+                                <h4 class="counter">Motion</h4>
+                                <p>Movement with intention</p>
                             </div>
                             <div class="service-funfact-box">
-                                <h4 class="counter">150+</h4>
-                                <p>[ satisfied customers ]</p>
+                                <h4 class="counter">Design</h4>
+                                <p>A consistent visual language</p>
                             </div>
                             <div class="service-funfact-box">
-                                <h4 class="counter">25+</h4>
-                                <p>[ certified award ]</p>
+                                <h4 class="counter">Detail</h4>
+                                <p>Care through the final delivery</p>
                             </div>
                         </div>
                     </div>
@@ -746,7 +593,7 @@
                 <div class="banner-sec">
                     <div class="banner-img-inner">
                         <div class="banner-img full-image-box">
-                            <img data-jarallax-element="-30 0" src="./assets/imgs/banner-2.png" alt="Banner">
+                            <img data-jarallax-element="-30 0" src="./assets/imgs/banner-2.png" alt="Visual placeholder — final studio assets to be added">
                         </div>
                     </div>
                 </div>
@@ -757,13 +604,13 @@
                     <div class="container">
                         <div class="section-header sticky-statement2">
                             <div class="left">
-                                <h2 class="title">
-                                    <span class="overflow-hidden"><span class="timeline-anim scroll-animation" data-animation="slide_down" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">Experience</span></span>
-                                </h2>
-                                <p>showcasing my visual <span class="border-bottom">designing journey</span></p>
+                                <h2 class="title"><span class="overflow-hidden heading-line"><span class="timeline-anim scroll-animation" data-animation="slide_down" data-animation-delay="0.0">Our creative</span></span>
+<span class="overflow-hidden heading-line"><span class="timeline-anim scroll-animation" data-animation="slide_down" data-animation-delay="0.12">focus</span></span>
+</h2>
+                                <p>The disciplines we bring together to shape your project.</p>
                             </div>
                             <div class="section-header-right">
-                                <div class="section-subtitle"><span class="white-circle"></span> <span class="theme-btn primary-bg">2014 - PRESENT</span></div>
+                                <div class="section-subtitle"><span class="white-circle"></span> <span class="theme-btn primary-bg">Built around the brief</span></div>
                             </div>
                         </div>
 
@@ -771,47 +618,41 @@
                         <div class="experience-lists">
                             <div class="experience-box scroll-animation" data-animation="slide_down2">
                                 <div class="left">
-                                    <img src="./assets/imgs/google-icon.svg" alt="Icon">
+                                    <img src="./assets/imgs/google-icon.svg" alt="" aria-hidden="true">
                                     <div class="experience-content">
-                                        <h5>GOOGLE <span class="experience-date">[ 2021 - present ]</span></h5>
-                                        <span class="designation">senior visual DESIGNER</span>
-                                        <p>Google Inspires Creativity and makes learning
-                                            piano fun. The sleek, lightweight body fits easily 
-                                            into Gig bags for Portability</p>
+                                        <h5>Video &amp; story</h5>
+                                        <span class="designation">Editing &amp; post-production</span>
+                                        <p>We shape footage into a sequence that communicates clearly, holds together, and gives important moments room to land.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="experience-box scroll-animation" data-animation="slide_down2">
                                 <div class="left">
-                                    <img src="./assets/imgs/meta-icon.svg" alt="Icon">
+                                    <img src="./assets/imgs/meta-icon.svg" alt="" aria-hidden="true">
                                     <div class="experience-content">
-                                        <h5>META <span class="experience-date">[ 2019 - 2020 ]</span></h5>
-                                        <span class="designation">SENIOR SOCIAL MEDIA DESIGNER</span>
-                                        <p>Meta Focuses on Innovative Design for its Social
-                                            media and Virtual reality products.</p>
+                                        <h5>Motion &amp; rhythm</h5>
+                                        <span class="designation">Motion graphics</span>
+                                        <p>We use movement to guide attention, explain ideas, and bring character to visual elements.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="experience-box scroll-animation" data-animation="slide_down2">
                                 <div class="left">
-                                    <img src="./assets/imgs/amazon-icon.svg" alt="Icon">
+                                    <img src="./assets/imgs/amazon-icon.svg" alt="" aria-hidden="true">
                                     <div class="experience-content">
-                                        <h5>AMAZON <span class="experience-date">[ 2017 - 2019 ]</span></h5>
-                                        <span class="designation">junior VISUAL DESIGNER</span>
-                                        <p>Amazon Invest heavily in Design for its various
-                                            platforms and devices. This made me to look more
-                                            Deeper in Designing.</p>
+                                        <h5>Brand &amp; identity</h5>
+                                        <span class="designation">Graphic design</span>
+                                        <p>We connect typography, imagery, color, and composition into a visual direction that feels consistent.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="experience-box scroll-animation" data-animation="slide_down2">
                                 <div class="left">
-                                    <img src="./assets/imgs/fiver-icon.svg" alt="Icon">
+                                    <img src="./assets/imgs/fiver-icon.svg" alt="" aria-hidden="true">
                                     <div class="experience-content">
-                                        <h5>FIVER <span class="experience-date">[ 2014 - 2017 ]</span></h5>
-                                        <span class="designation">freelance web designer</span>
-                                        <p>Bringing Creativity, Technical Expertise, and a 
-                                            passion for Design to every project.</p>
+                                        <h5>Content &amp; context</h5>
+                                        <span class="designation">Platform adaptation</span>
+                                        <p>We consider where the work will appear and prepare versions that make sense for the format and audience.</p>
                                     </div>
                                 </div>
                             </div>
@@ -825,14 +666,13 @@
                     <div class="container">
                         <div class="section-header sticky-statement3">
                             <div class="left">
-                                <h2 class="title">
-                                    <span class="overflow-hidden"><span class="timeline-anim scroll-animation" data-animation="slide_down" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">favourite 
-                                        stack</span></span>
-                                </h2>
-                                <p>explore my curated top <span class="border-bottom">design picks</span></p>
+                                <h2 class="title"><span class="overflow-hidden heading-line"><span class="timeline-anim scroll-animation" data-animation="slide_down" data-animation-delay="0.0">The tools behind</span></span>
+<span class="overflow-hidden heading-line"><span class="timeline-anim scroll-animation" data-animation="slide_down" data-animation-delay="0.12">the work.</span></span>
+</h2>
+                                <p>Tools support the process. The idea sets the direction.</p>
                             </div>
                             <div class="section-header-right">
-                                <div class="section-subtitle"><span class="white-circle"></span> <span class="theme-btn primary-bg">MY SKILL</span></div>
+                                <div class="section-subtitle"><span class="white-circle"></span> <span class="theme-btn primary-bg">Our toolkit</span></div>
                             </div>
                         </div>
 
@@ -840,61 +680,51 @@
                         <div class="experience-lists">
                             <div class="experience-box scroll-animation" data-animation="slide_down2">
                                 <div class="left">
-                                    <img src="./assets/imgs/figma-icon.svg" alt="Icon">
+                                    <img src="./assets/imgs/figma-icon.svg" alt="" aria-hidden="true">
                                     <div class="experience-content">
-                                        <h5>FIGMA <span class="experience-date">[ 98% ]</span></h5>
-                                        <span class="designation">DESIGN TOOl</span>
-                                        <p>Figma is a collaborative design tool for creating 
-                                            and prototyping user interfaces, ideal for team
-                                            projects with real-time feedback.</p>
+                                        <h5>[Editing software]</h5>
+                                        <span class="designation">Video editing</span>
+                                        <p>Where footage becomes a structured story through sequencing, timing, and revision.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="experience-box scroll-animation" data-animation="slide_down2">
                                 <div class="left">
-                                    <img src="./assets/imgs/framer-icon.svg" alt="Icon">
+                                    <img src="./assets/imgs/framer-icon.svg" alt="" aria-hidden="true">
                                     <div class="experience-content">
-                                        <h5>Framer <span class="experience-date">[ 98% ]</span></h5>
-                                        <span class="designation">Visual Design</span>
-                                        <p>framer excels in photo editing and graphic 
-                                            design, offering advanced tools for high-quality 
-                                            visual content creation.</p>
+                                        <h5>[Motion software]</h5>
+                                        <span class="designation">Motion design</span>
+                                        <p>Where typography, graphics, and visual ideas take on movement and rhythm.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="experience-box scroll-animation" data-animation="slide_down2">
                                 <div class="left">
-                                    <img src="./assets/imgs/webflow-icon.svg" alt="Icon">
+                                    <img src="./assets/imgs/webflow-icon.svg" alt="" aria-hidden="true">
                                     <div class="experience-content">
-                                        <h5>Webflow <span class="experience-date">[ 96% ]</span></h5>
-                                        <span class="designation">WIREFRAME / DESIGN</span>
-                                        <p>Web Flow enables interactive design and prototyping for
-                                            web and mobile apps, integrating seamlessly 
-                                            with Adobe Creative Cloud.</p>
+                                        <h5>[Design software]</h5>
+                                        <span class="designation">Graphic design</span>
+                                        <p>Where we develop compositions, refine imagery, and create assets for digital use.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="experience-box scroll-animation" data-animation="slide_down2">
                                 <div class="left">
-                                    <img src="./assets/imgs/notion-icon.svg" alt="Icon">
+                                    <img src="./assets/imgs/notion-icon.svg" alt="" aria-hidden="true">
                                     <div class="experience-content">
-                                        <h5>Notion <span class="experience-date">[ 92% ]</span></h5>
-                                        <span class="designation">FRONT END DEVELOPER</span>
-                                        <p>Notion adds interactivity and dynamic functionality
-                                            to Websites, making it essential for Modern
-                                            Web Development.</p>
+                                        <h5>[Finishing software]</h5>
+                                        <span class="designation">Sound &amp; finishing</span>
+                                        <p>Where the details of presentation are reviewed and prepared for delivery.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="experience-box scroll-animation" data-animation="slide_down2">
                                 <div class="left">
-                                    <img src="./assets/imgs/canva-icon.svg" alt="Icon">
+                                    <img src="./assets/imgs/canva-icon.svg" alt="" aria-hidden="true">
                                     <div class="experience-content">
-                                        <h5>Canva <span class="experience-date">[ 90% ]</span></h5>
-                                        <span class="designation">Design</span>
-                                        <p>Canva provides intensive training in skills like Figma,
-                                            Adobe XD, and JavaScript, Accelerating Career transitions
-                                            in Design and Development.</p>
+                                        <h5>[Review platform]</h5>
+                                        <span class="designation">Collaboration</span>
+                                        <p>Where references, versions, and feedback stay organized throughout a project.</p>
                                     </div>
                                 </div>
                             </div>
@@ -907,11 +737,11 @@
                 <section class="testimonial-sec">
                     <div class="container">
                         <div class="section-header-2">
-                            <h6>Testimonials</h6>
-                            <h2 class="section-title2">
-                                <span class="overflow-hidden"><span class="timeline-anim scroll-animation" data-animation="slide_down" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">WHAT MY CLIENT SAY</span></span>
-                            </h2>
-                            <h6>[ See what our clients have to say about their working <span class="border-bottom">experience</span> ]</h6>
+                            <h6>Client feedback</h6>
+                            <h2 class="section-title2"><span class="overflow-hidden heading-line"><span class="timeline-anim scroll-animation" data-animation="slide_down" data-animation-delay="0.0">Good work.</span></span>
+<span class="overflow-hidden heading-line"><span class="timeline-anim scroll-animation" data-animation="slide_down" data-animation-delay="0.12">Shared experiences.</span></span>
+</h2>
+                            <h6>Client stories will be added here as we receive permission to share them.</h6>
                         </div>
                     </div>
 
@@ -919,253 +749,217 @@
                     <div class="testimonial-slide">
                         <div class="testimonial-box">
                             <div class="testimonial-header">
-                                <img src="./assets/imgs/client-1.svg" alt="Logo">
-                                <span class="date">[ march 2024 ]</span>
+                                <img src="./assets/imgs/client-1.svg" alt="Visual placeholder — final studio assets to be added">
+                                <span class="date">Feedback pending approval</span>
                             </div>
 
                             <div class="testimonial-body">
-                                <p>"I was amazed by how intuitive and user-friendly 
-                                    everything felt. It's clear their designers obsess
-                                    over every pixel, every transition, to create 
-                                    experiences that delight"</p>
+                                <p>[Approved client testimonial will appear here.]</p>
                             </div>
                             
                             <div class="testimonial-footer">
-                                <img src="./assets/imgs/testimonial-1.png" alt="Testimonial">
+                                <img src="./assets/imgs/testimonial-1.png" alt="Visual placeholder — final studio assets to be added">
                                 <div class="content">
-                                    <h4>kate mccalilster</h4>
-                                    <span class="designation">cloud sales executive / ipsum</span>
+                                    <h4>[Client name]</h4>
+                                    <span class="designation">[Confirmed role and company]</span>
                                 </div>
                             </div>
                         </div>
                         <div class="testimonial-box">
                             <div class="testimonial-header">
-                                <img src="./assets/imgs/client-3.svg" alt="Logo">
-                                <span class="date">[ april 2024 ]</span>
+                                <img src="./assets/imgs/client-3.svg" alt="Visual placeholder — final studio assets to be added">
+                                <span class="date">Feedback pending approval</span>
                             </div>
 
                             <div class="testimonial-body">
-                                <p>I was struck by how seamlessly everything 
-                                    flowed and how easy it was to navigate. their 
-                                    team meticulously perfects every detail 
-                                    a truly engaging and enjoyable experience.</p>
+                                <p>[Approved client testimonial will appear here.]</p>
                             </div>
                             
                             <div class="testimonial-footer">
-                                <img src="./assets/imgs/testimonial-1.png" alt="Testimonial">
+                                <img src="./assets/imgs/testimonial-1.png" alt="Visual placeholder — final studio assets to be added">
                                 <div class="content">
-                                    <h4>jesse oriko</h4>
-                                    <span class="designation">product manager / noise & co</span>
+                                    <h4>[Client name]</h4>
+                                    <span class="designation">[Confirmed role and company]</span>
                                 </div>
                             </div>
                         </div>
                         <div class="testimonial-box">
                             <div class="testimonial-header">
-                                <img src="./assets/imgs/client-6.svg" alt="Logo">
-                                <span class="date">[ MAY 2024 ]</span>
+                                <img src="./assets/imgs/client-6.svg" alt="Visual placeholder — final studio assets to be added">
+                                <span class="date">Feedback pending approval</span>
                             </div>
 
                             <div class="testimonial-body">
-                                <p>I was impressed by the effortless usability 
-                                    and the smooth interactions throughout. The
-                                    dedication of their designers to refining every
-                                    element is apparent, </p>
+                                <p>[Approved client testimonial will appear here.]</p>
                             </div>
                             
                             <div class="testimonial-footer">
-                                <img src="./assets/imgs/testimonial-2.png" alt="Testimonial">
+                                <img src="./assets/imgs/testimonial-2.png" alt="Visual placeholder — final studio assets to be added">
                                 <div class="content">
-                                    <h4>oleksandra zubrytska</h4>
-                                    <span class="designation">technical product managrr / logipsum</span>
+                                    <h4>[Client name]</h4>
+                                    <span class="designation">[Confirmed role and company]</span>
                                 </div>
                             </div>
                         </div>
                         <div class="testimonial-box">
                             <div class="testimonial-header">
-                                <img src="./assets/imgs/client-5.svg" alt="Logo">
-                                <span class="date">[ JULY 2024 ]</span>
+                                <img src="./assets/imgs/client-5.svg" alt="Visual placeholder — final studio assets to be added">
+                                <span class="date">Feedback pending approval</span>
                             </div>
 
                             <div class="testimonial-body">
-                                <p>The user experience was incredibly smooth and
-                                    intuitive. It's evident that their designers pay 
-                                   meticulous attention to every detail 
-                                   crafting an experience that truly impresses.</p>
+                                <p>[Approved client testimonial will appear here.]</p>
                             </div>
                             
                             <div class="testimonial-footer">
-                                <img src="./assets/imgs/testimonial-3.png" alt="Testimonial">
+                                <img src="./assets/imgs/testimonial-3.png" alt="Visual placeholder — final studio assets to be added">
                                 <div class="content">
-                                    <h4>rick o’connel</h4>
-                                    <span class="designation">design manager / market compliance</span>
+                                    <h4>[Client name]</h4>
+                                    <span class="designation">[Confirmed role and company]</span>
                                 </div>
                             </div>
                         </div>
                         <div class="testimonial-box">
                             <div class="testimonial-header">
-                                <img src="./assets/imgs/client-7.svg" alt="Logo">
-                                <span class="date">[ AUG 2024 ]</span>
+                                <img src="./assets/imgs/client-7.svg" alt="Visual placeholder — final studio assets to be added">
+                                <span class="date">Feedback pending approval</span>
                             </div>
 
                             <div class="testimonial-body">
-                                <p>The interface was strikingly user-friendly and 
-                                    fluid. It's clear their team dedicates themselves
-                                    to perfecting every element and transition, 
-                                    resulting perfection</p>
+                                <p>[Approved client testimonial will appear here.]</p>
                             </div>
                             
                             <div class="testimonial-footer">
-                                <img src="./assets/imgs/testimonial-4.png" alt="Testimonial">
+                                <img src="./assets/imgs/testimonial-4.png" alt="Visual placeholder — final studio assets to be added">
                                 <div class="content">
-                                    <h4>watson andrew</h4>
-                                    <span class="designation">royal caribbean/ owner </span>
+                                    <h4>[Client name]</h4>
+                                    <span class="designation">[Confirmed role and company]</span>
                                 </div>
                             </div>
                         </div>
                         <div class="testimonial-box">
                             <div class="testimonial-header">
-                                <img src="./assets/imgs/client-2.svg" alt="Logo">
-                                <span class="date">[ AUG 2024 ]</span>
+                                <img src="./assets/imgs/client-2.svg" alt="Visual placeholder — final studio assets to be added">
+                                <span class="date">Feedback pending approval</span>
                             </div>
 
                             <div class="testimonial-body">
-                                <p>"I was amazed by how intuitive and user-friendly 
-                                    everything felt. It's clear their designers obsess
-                                    over every pixel, every transition, to create 
-                                    experiences that delight"</p>
+                                <p>[Approved client testimonial will appear here.]</p>
                             </div>
                             
                             <div class="testimonial-footer">
-                                <img src="./assets/imgs/testimonial-5.png" alt="Testimonial">
+                                <img src="./assets/imgs/testimonial-5.png" alt="Visual placeholder — final studio assets to be added">
                                 <div class="content">
-                                    <h4>zean Zubrytska</h4>
-                                    <span class="designation">technical product manager /  noise & co</span>
+                                    <h4>[Client name]</h4>
+                                    <span class="designation">[Confirmed role and company]</span>
                                 </div>
                             </div>
                         </div>
                         <div class="testimonial-box">
                             <div class="testimonial-header">
-                                <img src="./assets/imgs/client-1.svg" alt="Logo">
-                                <span class="date">[ march 2024 ]</span>
+                                <img src="./assets/imgs/client-1.svg" alt="Visual placeholder — final studio assets to be added">
+                                <span class="date">Feedback pending approval</span>
                             </div>
 
                             <div class="testimonial-body">
-                                <p>"I was amazed by how intuitive and user-friendly 
-                                    everything felt. It's clear their designers obsess
-                                    over every pixel, every transition, to create 
-                                    experiences that delight"</p>
+                                <p>[Approved client testimonial will appear here.]</p>
                             </div>
                             
                             <div class="testimonial-footer">
-                                <img src="./assets/imgs/testimonial-1.png" alt="Testimonial">
+                                <img src="./assets/imgs/testimonial-1.png" alt="Visual placeholder — final studio assets to be added">
                                 <div class="content">
-                                    <h4>kate mccalilster</h4>
-                                    <span class="designation">cloud sales executive / ipsum</span>
+                                    <h4>[Client name]</h4>
+                                    <span class="designation">[Confirmed role and company]</span>
                                 </div>
                             </div>
                         </div>
                         <div class="testimonial-box">
                             <div class="testimonial-header">
-                                <img src="./assets/imgs/client-3.svg" alt="Logo">
-                                <span class="date">[ april 2024 ]</span>
+                                <img src="./assets/imgs/client-3.svg" alt="Visual placeholder — final studio assets to be added">
+                                <span class="date">Feedback pending approval</span>
                             </div>
 
                             <div class="testimonial-body">
-                                <p>I was struck by how seamlessly everything 
-                                    flowed and how easy it was to navigate. their 
-                                    team meticulously perfects every detail 
-                                    a truly engaging and enjoyable experience.</p>
+                                <p>[Approved client testimonial will appear here.]</p>
                             </div>
                             
                             <div class="testimonial-footer">
-                                <img src="./assets/imgs/testimonial-1.png" alt="Testimonial">
+                                <img src="./assets/imgs/testimonial-1.png" alt="Visual placeholder — final studio assets to be added">
                                 <div class="content">
-                                    <h4>jesse oriko</h4>
-                                    <span class="designation">product manager / noise & co</span>
+                                    <h4>[Client name]</h4>
+                                    <span class="designation">[Confirmed role and company]</span>
                                 </div>
                             </div>
                         </div>
                         <div class="testimonial-box">
                             <div class="testimonial-header">
-                                <img src="./assets/imgs/client-6.svg" alt="Logo">
-                                <span class="date">[ MAY 2024 ]</span>
+                                <img src="./assets/imgs/client-6.svg" alt="Visual placeholder — final studio assets to be added">
+                                <span class="date">Feedback pending approval</span>
                             </div>
 
                             <div class="testimonial-body">
-                                <p>I was impressed by the effortless usability 
-                                    and the smooth interactions throughout. The
-                                    dedication of their designers to refining every
-                                    element is apparent, </p>
+                                <p>[Approved client testimonial will appear here.]</p>
                             </div>
                             
                             <div class="testimonial-footer">
-                                <img src="./assets/imgs/testimonial-2.png" alt="Testimonial">
+                                <img src="./assets/imgs/testimonial-2.png" alt="Visual placeholder — final studio assets to be added">
                                 <div class="content">
-                                    <h4>oleksandra zubrytska</h4>
-                                    <span class="designation">technical product managrr / logipsum</span>
+                                    <h4>[Client name]</h4>
+                                    <span class="designation">[Confirmed role and company]</span>
                                 </div>
                             </div>
                         </div>
                         <div class="testimonial-box">
                             <div class="testimonial-header">
-                                <img src="./assets/imgs/client-5.svg" alt="Logo">
-                                <span class="date">[ JULY 2024 ]</span>
+                                <img src="./assets/imgs/client-5.svg" alt="Visual placeholder — final studio assets to be added">
+                                <span class="date">Feedback pending approval</span>
                             </div>
 
                             <div class="testimonial-body">
-                                <p>The user experience was incredibly smooth and
-                                    intuitive. It's evident that their designers pay 
-                                   meticulous attention to every detail 
-                                   crafting an experience that truly impresses.</p>
+                                <p>[Approved client testimonial will appear here.]</p>
                             </div>
                             
                             <div class="testimonial-footer">
-                                <img src="./assets/imgs/testimonial-3.png" alt="Testimonial">
+                                <img src="./assets/imgs/testimonial-3.png" alt="Visual placeholder — final studio assets to be added">
                                 <div class="content">
-                                    <h4>rick o’connel</h4>
-                                    <span class="designation">design manager / market compliance</span>
+                                    <h4>[Client name]</h4>
+                                    <span class="designation">[Confirmed role and company]</span>
                                 </div>
                             </div>
                         </div>
                         <div class="testimonial-box">
                             <div class="testimonial-header">
-                                <img src="./assets/imgs/client-7.svg" alt="Logo">
-                                <span class="date">[ AUG 2024 ]</span>
+                                <img src="./assets/imgs/client-7.svg" alt="Visual placeholder — final studio assets to be added">
+                                <span class="date">Feedback pending approval</span>
                             </div>
 
                             <div class="testimonial-body">
-                                <p>The interface was strikingly user-friendly and 
-                                    fluid. It's clear their team dedicates themselves
-                                    to perfecting every element and transition, 
-                                    resulting perfection</p>
+                                <p>[Approved client testimonial will appear here.]</p>
                             </div>
                             
                             <div class="testimonial-footer">
-                                <img src="./assets/imgs/testimonial-4.png" alt="Testimonial">
+                                <img src="./assets/imgs/testimonial-4.png" alt="Visual placeholder — final studio assets to be added">
                                 <div class="content">
-                                    <h4>watson andrew</h4>
-                                    <span class="designation">royal caribbean/ owner </span>
+                                    <h4>[Client name]</h4>
+                                    <span class="designation">[Confirmed role and company]</span>
                                 </div>
                             </div>
                         </div>
                         <div class="testimonial-box">
                             <div class="testimonial-header">
-                                <img src="./assets/imgs/client-2.svg" alt="Logo">
-                                <span class="date">[ AUG 2024 ]</span>
+                                <img src="./assets/imgs/client-2.svg" alt="Visual placeholder — final studio assets to be added">
+                                <span class="date">Feedback pending approval</span>
                             </div>
 
                             <div class="testimonial-body">
-                                <p>"I was amazed by how intuitive and user-friendly 
-                                    everything felt. It's clear their designers obsess
-                                    over every pixel, every transition, to create 
-                                    experiences that delight"</p>
+                                <p>[Approved client testimonial will appear here.]</p>
                             </div>
                             
                             <div class="testimonial-footer">
-                                <img src="./assets/imgs/testimonial-5.png" alt="Testimonial">
+                                <img src="./assets/imgs/testimonial-5.png" alt="Visual placeholder — final studio assets to be added">
                                 <div class="content">
-                                    <h4>zean Zubrytska</h4>
-                                    <span class="designation">technical product manager /  noise & co</span>
+                                    <h4>[Client name]</h4>
+                                    <span class="designation">[Confirmed role and company]</span>
                                 </div>
                             </div>
                         </div>
@@ -1173,253 +967,217 @@
                     <div class="testimonial-slide testimonial-slide-2">
                         <div class="testimonial-box">
                             <div class="testimonial-header">
-                                <img src="./assets/imgs/client-1.svg" alt="Logo">
-                                <span class="date">[ march 2024 ]</span>
+                                <img src="./assets/imgs/client-1.svg" alt="Visual placeholder — final studio assets to be added">
+                                <span class="date">Feedback pending approval</span>
                             </div>
 
                             <div class="testimonial-body">
-                                <p>"I was amazed by how intuitive and user-friendly 
-                                    everything felt. It's clear their designers obsess
-                                    over every pixel, every transition, to create 
-                                    experiences that delight"</p>
+                                <p>[Approved client testimonial will appear here.]</p>
                             </div>
                             
                             <div class="testimonial-footer">
-                                <img src="./assets/imgs/testimonial-1.png" alt="Testimonial">
+                                <img src="./assets/imgs/testimonial-1.png" alt="Visual placeholder — final studio assets to be added">
                                 <div class="content">
-                                    <h4>kate mccalilster</h4>
-                                    <span class="designation">cloud sales executive / ipsum</span>
+                                    <h4>[Client name]</h4>
+                                    <span class="designation">[Confirmed role and company]</span>
                                 </div>
                             </div>
                         </div>
                         <div class="testimonial-box">
                             <div class="testimonial-header">
-                                <img src="./assets/imgs/client-3.svg" alt="Logo">
-                                <span class="date">[ april 2024 ]</span>
+                                <img src="./assets/imgs/client-3.svg" alt="Visual placeholder — final studio assets to be added">
+                                <span class="date">Feedback pending approval</span>
                             </div>
 
                             <div class="testimonial-body">
-                                <p>I was struck by how seamlessly everything 
-                                    flowed and how easy it was to navigate. their 
-                                    team meticulously perfects every detail 
-                                    a truly engaging and enjoyable experience.</p>
+                                <p>[Approved client testimonial will appear here.]</p>
                             </div>
                             
                             <div class="testimonial-footer">
-                                <img src="./assets/imgs/testimonial-1.png" alt="Testimonial">
+                                <img src="./assets/imgs/testimonial-1.png" alt="Visual placeholder — final studio assets to be added">
                                 <div class="content">
-                                    <h4>jesse oriko</h4>
-                                    <span class="designation">product manager / noise & co</span>
+                                    <h4>[Client name]</h4>
+                                    <span class="designation">[Confirmed role and company]</span>
                                 </div>
                             </div>
                         </div>
                         <div class="testimonial-box">
                             <div class="testimonial-header">
-                                <img src="./assets/imgs/client-6.svg" alt="Logo">
-                                <span class="date">[ MAY 2024 ]</span>
+                                <img src="./assets/imgs/client-6.svg" alt="Visual placeholder — final studio assets to be added">
+                                <span class="date">Feedback pending approval</span>
                             </div>
 
                             <div class="testimonial-body">
-                                <p>I was impressed by the effortless usability 
-                                    and the smooth interactions throughout. The
-                                    dedication of their designers to refining every
-                                    element is apparent, </p>
+                                <p>[Approved client testimonial will appear here.]</p>
                             </div>
                             
                             <div class="testimonial-footer">
-                                <img src="./assets/imgs/testimonial-2.png" alt="Testimonial">
+                                <img src="./assets/imgs/testimonial-2.png" alt="Visual placeholder — final studio assets to be added">
                                 <div class="content">
-                                    <h4>oleksandra zubrytska</h4>
-                                    <span class="designation">technical product managrr / logipsum</span>
+                                    <h4>[Client name]</h4>
+                                    <span class="designation">[Confirmed role and company]</span>
                                 </div>
                             </div>
                         </div>
                         <div class="testimonial-box">
                             <div class="testimonial-header">
-                                <img src="./assets/imgs/client-5.svg" alt="Logo">
-                                <span class="date">[ JULY 2024 ]</span>
+                                <img src="./assets/imgs/client-5.svg" alt="Visual placeholder — final studio assets to be added">
+                                <span class="date">Feedback pending approval</span>
                             </div>
 
                             <div class="testimonial-body">
-                                <p>The user experience was incredibly smooth and
-                                    intuitive. It's evident that their designers pay 
-                                   meticulous attention to every detail 
-                                   crafting an experience that truly impresses.</p>
+                                <p>[Approved client testimonial will appear here.]</p>
                             </div>
                             
                             <div class="testimonial-footer">
-                                <img src="./assets/imgs/testimonial-3.png" alt="Testimonial">
+                                <img src="./assets/imgs/testimonial-3.png" alt="Visual placeholder — final studio assets to be added">
                                 <div class="content">
-                                    <h4>rick o’connel</h4>
-                                    <span class="designation">design manager / market compliance</span>
+                                    <h4>[Client name]</h4>
+                                    <span class="designation">[Confirmed role and company]</span>
                                 </div>
                             </div>
                         </div>
                         <div class="testimonial-box">
                             <div class="testimonial-header">
-                                <img src="./assets/imgs/client-7.svg" alt="Logo">
-                                <span class="date">[ AUG 2024 ]</span>
+                                <img src="./assets/imgs/client-7.svg" alt="Visual placeholder — final studio assets to be added">
+                                <span class="date">Feedback pending approval</span>
                             </div>
 
                             <div class="testimonial-body">
-                                <p>The interface was strikingly user-friendly and 
-                                    fluid. It's clear their team dedicates themselves
-                                    to perfecting every element and transition, 
-                                    resulting perfection</p>
+                                <p>[Approved client testimonial will appear here.]</p>
                             </div>
                             
                             <div class="testimonial-footer">
-                                <img src="./assets/imgs/testimonial-4.png" alt="Testimonial">
+                                <img src="./assets/imgs/testimonial-4.png" alt="Visual placeholder — final studio assets to be added">
                                 <div class="content">
-                                    <h4>watson andrew</h4>
-                                    <span class="designation">royal caribbean/ owner </span>
+                                    <h4>[Client name]</h4>
+                                    <span class="designation">[Confirmed role and company]</span>
                                 </div>
                             </div>
                         </div>
                         <div class="testimonial-box">
                             <div class="testimonial-header">
-                                <img src="./assets/imgs/client-2.svg" alt="Logo">
-                                <span class="date">[ AUG 2024 ]</span>
+                                <img src="./assets/imgs/client-2.svg" alt="Visual placeholder — final studio assets to be added">
+                                <span class="date">Feedback pending approval</span>
                             </div>
 
                             <div class="testimonial-body">
-                                <p>"I was amazed by how intuitive and user-friendly 
-                                    everything felt. It's clear their designers obsess
-                                    over every pixel, every transition, to create 
-                                    experiences that delight"</p>
+                                <p>[Approved client testimonial will appear here.]</p>
                             </div>
                             
                             <div class="testimonial-footer">
-                                <img src="./assets/imgs/testimonial-5.png" alt="Testimonial">
+                                <img src="./assets/imgs/testimonial-5.png" alt="Visual placeholder — final studio assets to be added">
                                 <div class="content">
-                                    <h4>zean Zubrytska</h4>
-                                    <span class="designation">technical product manager /  noise & co</span>
+                                    <h4>[Client name]</h4>
+                                    <span class="designation">[Confirmed role and company]</span>
                                 </div>
                             </div>
                         </div>
                         <div class="testimonial-box">
                             <div class="testimonial-header">
-                                <img src="./assets/imgs/client-1.svg" alt="Logo">
-                                <span class="date">[ march 2024 ]</span>
+                                <img src="./assets/imgs/client-1.svg" alt="Visual placeholder — final studio assets to be added">
+                                <span class="date">Feedback pending approval</span>
                             </div>
 
                             <div class="testimonial-body">
-                                <p>"I was amazed by how intuitive and user-friendly 
-                                    everything felt. It's clear their designers obsess
-                                    over every pixel, every transition, to create 
-                                    experiences that delight"</p>
+                                <p>[Approved client testimonial will appear here.]</p>
                             </div>
                             
                             <div class="testimonial-footer">
-                                <img src="./assets/imgs/testimonial-1.png" alt="Testimonial">
+                                <img src="./assets/imgs/testimonial-1.png" alt="Visual placeholder — final studio assets to be added">
                                 <div class="content">
-                                    <h4>kate mccalilster</h4>
-                                    <span class="designation">cloud sales executive / ipsum</span>
+                                    <h4>[Client name]</h4>
+                                    <span class="designation">[Confirmed role and company]</span>
                                 </div>
                             </div>
                         </div>
                         <div class="testimonial-box">
                             <div class="testimonial-header">
-                                <img src="./assets/imgs/client-3.svg" alt="Logo">
-                                <span class="date">[ april 2024 ]</span>
+                                <img src="./assets/imgs/client-3.svg" alt="Visual placeholder — final studio assets to be added">
+                                <span class="date">Feedback pending approval</span>
                             </div>
 
                             <div class="testimonial-body">
-                                <p>I was struck by how seamlessly everything 
-                                    flowed and how easy it was to navigate. their 
-                                    team meticulously perfects every detail 
-                                    a truly engaging and enjoyable experience.</p>
+                                <p>[Approved client testimonial will appear here.]</p>
                             </div>
                             
                             <div class="testimonial-footer">
-                                <img src="./assets/imgs/testimonial-1.png" alt="Testimonial">
+                                <img src="./assets/imgs/testimonial-1.png" alt="Visual placeholder — final studio assets to be added">
                                 <div class="content">
-                                    <h4>jesse oriko</h4>
-                                    <span class="designation">product manager / noise & co</span>
+                                    <h4>[Client name]</h4>
+                                    <span class="designation">[Confirmed role and company]</span>
                                 </div>
                             </div>
                         </div>
                         <div class="testimonial-box">
                             <div class="testimonial-header">
-                                <img src="./assets/imgs/client-6.svg" alt="Logo">
-                                <span class="date">[ MAY 2024 ]</span>
+                                <img src="./assets/imgs/client-6.svg" alt="Visual placeholder — final studio assets to be added">
+                                <span class="date">Feedback pending approval</span>
                             </div>
 
                             <div class="testimonial-body">
-                                <p>I was impressed by the effortless usability 
-                                    and the smooth interactions throughout. The
-                                    dedication of their designers to refining every
-                                    element is apparent, </p>
+                                <p>[Approved client testimonial will appear here.]</p>
                             </div>
                             
                             <div class="testimonial-footer">
-                                <img src="./assets/imgs/testimonial-2.png" alt="Testimonial">
+                                <img src="./assets/imgs/testimonial-2.png" alt="Visual placeholder — final studio assets to be added">
                                 <div class="content">
-                                    <h4>oleksandra zubrytska</h4>
-                                    <span class="designation">technical product managrr / logipsum</span>
+                                    <h4>[Client name]</h4>
+                                    <span class="designation">[Confirmed role and company]</span>
                                 </div>
                             </div>
                         </div>
                         <div class="testimonial-box">
                             <div class="testimonial-header">
-                                <img src="./assets/imgs/client-5.svg" alt="Logo">
-                                <span class="date">[ JULY 2024 ]</span>
+                                <img src="./assets/imgs/client-5.svg" alt="Visual placeholder — final studio assets to be added">
+                                <span class="date">Feedback pending approval</span>
                             </div>
 
                             <div class="testimonial-body">
-                                <p>The user experience was incredibly smooth and
-                                    intuitive. It's evident that their designers pay 
-                                   meticulous attention to every detail 
-                                   crafting an experience that truly impresses.</p>
+                                <p>[Approved client testimonial will appear here.]</p>
                             </div>
                             
                             <div class="testimonial-footer">
-                                <img src="./assets/imgs/testimonial-3.png" alt="Testimonial">
+                                <img src="./assets/imgs/testimonial-3.png" alt="Visual placeholder — final studio assets to be added">
                                 <div class="content">
-                                    <h4>rick o’connel</h4>
-                                    <span class="designation">design manager / market compliance</span>
+                                    <h4>[Client name]</h4>
+                                    <span class="designation">[Confirmed role and company]</span>
                                 </div>
                             </div>
                         </div>
                         <div class="testimonial-box">
                             <div class="testimonial-header">
-                                <img src="./assets/imgs/client-7.svg" alt="Logo">
-                                <span class="date">[ AUG 2024 ]</span>
+                                <img src="./assets/imgs/client-7.svg" alt="Visual placeholder — final studio assets to be added">
+                                <span class="date">Feedback pending approval</span>
                             </div>
 
                             <div class="testimonial-body">
-                                <p>The interface was strikingly user-friendly and 
-                                    fluid. It's clear their team dedicates themselves
-                                    to perfecting every element and transition, 
-                                    resulting perfection</p>
+                                <p>[Approved client testimonial will appear here.]</p>
                             </div>
                             
                             <div class="testimonial-footer">
-                                <img src="./assets/imgs/testimonial-4.png" alt="Testimonial">
+                                <img src="./assets/imgs/testimonial-4.png" alt="Visual placeholder — final studio assets to be added">
                                 <div class="content">
-                                    <h4>watson andrew</h4>
-                                    <span class="designation">royal caribbean/ owner </span>
+                                    <h4>[Client name]</h4>
+                                    <span class="designation">[Confirmed role and company]</span>
                                 </div>
                             </div>
                         </div>
                         <div class="testimonial-box">
                             <div class="testimonial-header">
-                                <img src="./assets/imgs/client-2.svg" alt="Logo">
-                                <span class="date">[ AUG 2024 ]</span>
+                                <img src="./assets/imgs/client-2.svg" alt="Visual placeholder — final studio assets to be added">
+                                <span class="date">Feedback pending approval</span>
                             </div>
 
                             <div class="testimonial-body">
-                                <p>"I was amazed by how intuitive and user-friendly 
-                                    everything felt. It's clear their designers obsess
-                                    over every pixel, every transition, to create 
-                                    experiences that delight"</p>
+                                <p>[Approved client testimonial will appear here.]</p>
                             </div>
                             
                             <div class="testimonial-footer">
-                                <img src="./assets/imgs/testimonial-5.png" alt="Testimonial">
+                                <img src="./assets/imgs/testimonial-5.png" alt="Visual placeholder — final studio assets to be added">
                                 <div class="content">
-                                    <h4>zean Zubrytska</h4>
-                                    <span class="designation">technical product manager /  noise & co</span>
+                                    <h4>[Client name]</h4>
+                                    <span class="designation">[Confirmed role and company]</span>
                                 </div>
                             </div>
                         </div>
@@ -1431,7 +1189,7 @@
                 <div class="banner-sec">
                     <div class="banner-img-inner">
                         <div class="banner-img full-image-box">
-                            <img data-jarallax-element="-30 0" src="./assets/imgs/banner-3.png" alt="Banner">
+                            <img data-jarallax-element="-30 0" src="./assets/imgs/banner-3.png" alt="Visual placeholder — final studio assets to be added">
                         </div>
                     </div>
                 </div>
@@ -1442,14 +1200,13 @@
                     <div class="container">
                         <div class="section-header">
                             <div class="left">
-                                <h2 class="title">
-                                    <span class="overflow-hidden"><span class="timeline-anim scroll-animation" data-animation="slide_down" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">FREQUENTLY <br>
-                                        ASKED QUESTIONS</span></span>
-                                </h2>
-                                <p> ANSWERS TO COMMON QUERIES WE OFTEN RECEIVE </p>
+                                <h2 class="title"><span class="overflow-hidden heading-line"><span class="timeline-anim scroll-animation" data-animation="slide_down" data-animation-delay="0.0">Before we</span></span>
+<span class="overflow-hidden heading-line"><span class="timeline-anim scroll-animation" data-animation="slide_down" data-animation-delay="0.12">get started.</span></span>
+</h2>
+                                <p>A few useful answers about working with Embrwave.</p>
                             </div>
                             <div class="section-header-right">
-                                <div class="section-subtitle"><span class="white-circle"></span> <span class="theme-btn primary-bg">GET TO KNOW MORE</span></div>
+                                <div class="section-subtitle"><span class="white-circle"></span> <span class="theme-btn primary-bg">Your questions, answered</span></div>
                             </div>
                         </div>
 
@@ -1459,119 +1216,91 @@
                             <div class="accordion faq-wrap" id="faqAccordionExample">
                                 <div class="accordion-item faq-item service-faq-item">
                                     <h2 class="accordion-header" id="headingFaqOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseFaqOne" aria-expanded="true" aria-controls="collapseFaqOne">
-                                            What industries do you specialize in? <span class="accordion-plus-icon"><span></span><span></span></span>
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaqOne" aria-expanded="true" aria-controls="collapseFaqOne">What can Embrwave help me create? <span class="accordion-plus-icon"><span></span><span></span></span>
                                         </button>
                                     </h2>
-                                    <div id="collapseFaqOne" class="accordion-collapse collapse show" aria-labelledby="headingFaqOne"
-                                        data-bs-parent="#faqAccordionExample">
+                                    <div id="collapseFaqOne" class="accordion-collapse collapse show" aria-labelledby="headingFaqOne" data-bs-parent="#faqAccordionExample">
                                         <div class="accordion-body">
                                             <div class="accordion-content">
-                                                <p>I have experience working across various industries including but not limited to Technology,
-                                                    Healthcare, Fashion, Hospitality and Non Profit Organization.</p>
+                                                <p>We focus on video editing, motion graphics, graphic and brand design, and social content. Tell us what you want to make and where it will be used, and we’ll discuss the combination of services that fits the brief.</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item faq-item service-faq-item">
                                     <h2 class="accordion-header" id="headingFaqTwo">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseFaqTwo" aria-expanded="false" aria-controls="collapseFaqTwo">
-                                            What is your typical project timeline? <span class="accordion-plus-icon"><span></span><span></span></span>
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaqTwo" aria-expanded="false" aria-controls="collapseFaqTwo">Who do you work with? <span class="accordion-plus-icon"><span></span><span></span></span>
                                         </button>
                                     </h2>
-                                    <div id="collapseFaqTwo" class="accordion-collapse collapse" aria-labelledby="headingFaqTwo"
-                                        data-bs-parent="#faqAccordionExample">
+                                    <div id="collapseFaqTwo" class="accordion-collapse collapse" aria-labelledby="headingFaqTwo" data-bs-parent="#faqAccordionExample">
                                         <div class="accordion-body">
                                             <div class="accordion-content">
-                                                <p>I have experience working across various industries including but not limited to Technology,
-                                                    Healthcare, Fashion, Hospitality and Non Profit Organization.</p>
+                                                <p>Our services are designed for brands, creators, businesses, and teams that need thoughtful visual content. The starting point is a clear conversation about your goals and whether our approach fits the project.</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item faq-item service-faq-item">
                                     <h2 class="accordion-header" id="headingFaqThree">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseFaqThree" aria-expanded="false" aria-controls="collapseFaqThree">
-                                            Do you offer post-launch support or maintenance? <span class="accordion-plus-icon"><span></span><span></span></span>
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaqThree" aria-expanded="false" aria-controls="collapseFaqThree">How do we start a project? <span class="accordion-plus-icon"><span></span><span></span></span>
                                         </button>
                                     </h2>
-                                    <div id="collapseFaqThree" class="accordion-collapse collapse" aria-labelledby="headingFaqThree"
-                                        data-bs-parent="#faqAccordionExample">
+                                    <div id="collapseFaqThree" class="accordion-collapse collapse" aria-labelledby="headingFaqThree" data-bs-parent="#faqAccordionExample">
                                         <div class="accordion-body">
                                             <div class="accordion-content">
-                                                <p>I have experience working across various industries including but not limited to Technology,
-                                                    Healthcare, Fashion, Hospitality and Non Profit Organization.</p>
+                                                <p>Send us a short brief through the contact page or email studioembrwave@gmail.com. Include what you need, your intended deadline, and any references or assets you already have. We’ll review the details and discuss the next step.</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item faq-item service-faq-item">
                                     <h2 class="accordion-header" id="headingFaqFour">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseFaqFour" aria-expanded="false" aria-controls="collapseFaqFour">
-                                            What software and tools do you use for your designs? <span class="accordion-plus-icon"><span></span><span></span></span>
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaqFour" aria-expanded="false" aria-controls="collapseFaqFour">How long will my project take? <span class="accordion-plus-icon"><span></span><span></span></span>
                                         </button>
                                     </h2>
-                                    <div id="collapseFaqFour" class="accordion-collapse collapse" aria-labelledby="headingFaqFour"
-                                        data-bs-parent="#faqAccordionExample">
+                                    <div id="collapseFaqFour" class="accordion-collapse collapse" aria-labelledby="headingFaqFour" data-bs-parent="#faqAccordionExample">
                                         <div class="accordion-body">
                                             <div class="accordion-content">
-                                                <p>I have experience working across various industries including but not limited to Technology,
-                                                    Healthcare, Fashion, Hospitality and Non Profit Organization.</p>
+                                                <p>Timing depends on the scope, the material available, and the review process. We’ll agree on a schedule before work begins. If you have a fixed deadline, mention it in your first message.</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item faq-item service-faq-item">
                                     <h2 class="accordion-header" id="headingFaqFive">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseFaqFive" aria-expanded="false" aria-controls="collapseFaqFive">
-                                            What are your go-to programs for design work? <span class="accordion-plus-icon"><span></span><span></span></span>
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaqFive" aria-expanded="false" aria-controls="collapseFaqFive">Can you work with footage and assets I already have? <span class="accordion-plus-icon"><span></span><span></span></span>
                                         </button>
                                     </h2>
-                                    <div id="collapseFaqFive" class="accordion-collapse collapse" aria-labelledby="headingFaqFive"
-                                        data-bs-parent="#faqAccordionExample">
+                                    <div id="collapseFaqFive" class="accordion-collapse collapse" aria-labelledby="headingFaqFive" data-bs-parent="#faqAccordionExample">
                                         <div class="accordion-body">
                                             <div class="accordion-content">
-                                                <p>I have experience working across various industries including but not limited to Technology,
-                                                    Healthcare, Fashion, Hospitality and Non Profit Organization.</p>
+                                                <p>Yes. Share the footage, brand files, copy, or references you want us to use. We’ll review the material and identify anything else needed to complete the agreed work.</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item faq-item service-faq-item">
                                     <h2 class="accordion-header" id="headingFaqSix">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseFaqSix" aria-expanded="false" aria-controls="collapseFaqSix">
-                                            do your designs are tailored to each client? <span class="accordion-plus-icon"><span></span><span></span></span>
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaqSix" aria-expanded="false" aria-controls="collapseFaqSix">How do feedback and revisions work? <span class="accordion-plus-icon"><span></span><span></span></span>
                                         </button>
                                     </h2>
-                                    <div id="collapseFaqSix" class="accordion-collapse collapse" aria-labelledby="headingFaqSix"
-                                        data-bs-parent="#faqAccordionExample">
+                                    <div id="collapseFaqSix" class="accordion-collapse collapse" aria-labelledby="headingFaqSix" data-bs-parent="#faqAccordionExample">
                                         <div class="accordion-body">
                                             <div class="accordion-content">
-                                                <p>I have experience working across various industries including but not limited to Technology,
-                                                    Healthcare, Fashion, Hospitality and Non Profit Organization.</p>
+                                                <p>We’ll define the review stages and included revision rounds in the project proposal. Clear, consolidated feedback helps us refine the work efficiently. Requests that change the agreed scope can be discussed separately.</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item faq-item service-faq-item">
                                     <h2 class="accordion-header" id="headingFaqSeven">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseFaqSeven" aria-expanded="false" aria-controls="collapseFaqSeven">
-                                            How do I upgrade, downgrade, or cancel? <span class="accordion-plus-icon"><span></span><span></span></span>
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaqSeven" aria-expanded="false" aria-controls="collapseFaqSeven">Can we work together on an ongoing basis? <span class="accordion-plus-icon"><span></span><span></span></span>
                                         </button>
                                     </h2>
-                                    <div id="collapseFaqSeven" class="accordion-collapse collapse" aria-labelledby="headingFaqSeven"
-                                        data-bs-parent="#faqAccordionExample">
+                                    <div id="collapseFaqSeven" class="accordion-collapse collapse" aria-labelledby="headingFaqSeven" data-bs-parent="#faqAccordionExample">
                                         <div class="accordion-body">
                                             <div class="accordion-content">
-                                                <p>I have experience working across various industries including but not limited to Technology,
-                                                    Healthcare, Fashion, Hospitality and Non Profit Organization.</p>
+                                                <p>We can discuss recurring content and longer-term creative support. The arrangement should reflect your content needs, expected workload, and schedule, with the scope agreed before work begins.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1589,32 +1318,17 @@
                         <div class="custom-row">
                             <div class="cta-content">
                                 <div class="section-header-2">
-                                    <h2 class="section-title2">
-                                        <span class="overflow-hidden"><span class="timeline-anim scroll-animation" data-animation="slide_down" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">let’s make your <br>
-                                            design shine</span></span>
-                                    </h2>
-                                    <h6>“collaborate with me to craft exceptional designs <br>
-                                        reflect your unique vision.”</h6>
+                                    <h2 class="section-title2"><span class="overflow-hidden heading-line"><span class="timeline-anim scroll-animation" data-animation="slide_down" data-animation-delay="0.0">Your next idea.</span></span>
+<span class="overflow-hidden heading-line"><span class="timeline-anim scroll-animation" data-animation="slide_down" data-animation-delay="0.12">Let’s make it happen.</span></span>
+</h2>
+                                    <h6>Have footage, a brief, or an idea you’re still figuring out? Tell us what you have in mind. We’ll help shape the next step.</h6>
                                 </div>
-                                <a href="./contact.html" class="theme-btn">contact now</a>
-                                <ul class="social-links-text">
-                                    <li><a href="https://instagram.com" target="_blank" class="splite-text-anim">
-                                        <span>Instagram <img src="./assets/imgs/arrow.svg" alt="Icon"></span>
-                                        <span>Instagram <img src="./assets/imgs/arrow.svg" alt="Icon"></span>
-                                    </a></li>
-                                    <li><a href="https://twitter.com" target="_blank" class="splite-text-anim">
-                                        <span>Twitter <img src="./assets/imgs/arrow.svg" alt="Icon"></span>
-                                        <span>Twitter <img src="./assets/imgs/arrow.svg" alt="Icon"></span>
-                                    </a></li>
-                                    <li><a href="https://facebook.com" target="_blank" class="splite-text-anim">
-                                        <span>Facebook <img src="./assets/imgs/arrow.svg" alt="Icon"></span>
-                                        <span>Facebook <img src="./assets/imgs/arrow.svg" alt="Icon"></span>
-                                    </a></li>
-                                </ul>
+                                <a href="./contact.html" class="theme-btn">Start a conversation</a>
+                                <ul class="social-links-text"><li><a href="mailto:studioembrwave@gmail.com">Email Embrwave</a></li><li class="social-pending">Social profiles coming soon</li></ul>
                             </div>
     
                             <div class="cta-img">
-                                <img src="./assets/imgs/cta-img.png" alt="CTA">
+                                <img src="./assets/imgs/cta-img.png" alt="Visual placeholder — final studio assets to be added">
                             </div>
                         </div>
                     </div>
@@ -1632,8 +1346,8 @@
                         </div>
 
                         <div class="copyright-wrap">
-                            <p>&copy;2024 design</p>
-                            <p><img src="./assets/imgs/white-circle-shape.svg" alt="Shape"> c-09, toronto 632 7518760</p>
+                            <p>©<span data-year>2026</span> Embrwave Studios. All rights reserved.</p>
+                            <p>Dhaka, Bangladesh · <a href="mailto:studioembrwave@gmail.com">studioembrwave@gmail.com</a></p>
                         </div>
                     </div>
                 </footer>

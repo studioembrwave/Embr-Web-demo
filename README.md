@@ -27,7 +27,7 @@ The build creates `dist/` containing only public website files. Documentation, d
 - Homepage: `index.html`.
 - Portfolio listing: `work.html`; project details: `work-single*.html`.
 - Other pages: `service.html`, `pricing.html`, `contact.html`, `blog.html`, and `blog-single*.html`.
-- Styles: `assets/css/style.css` and `assets/css/responsive.css`.
+- Template styles: `assets/css/style.css` and `assets/css/responsive.css`. Embrwave branding and responsive copy treatments: `assets/css/embrwave.css` (loaded last).
 - Site interactions: `assets/js/main.js`.
 - Images: `assets/imgs/`; videos: `assets/video/`.
 
@@ -45,4 +45,10 @@ See [Cloudflare setup](docs/CLOUDFLARE_SETUP.md) for the connection settings and
 
 ## Current content status
 
-The template has been rebranded as Embrwave. Contact email links use `studioembrwave@gmail.com`. The contact form still contains the original template's Web3Forms integration; its recipient and delivery have not been verified for the studio. Do not assume changing the displayed email configures form delivery. Portfolio media, location, project claims, testimonials, and pricing remain template content pending review. Live hosting and a custom domain are not configured yet.
+The site uses Embrwave’s “More Than Editing” copy and #2323ff accents. The studio location is Dhaka, Bangladesh, and the header clock uses Asia/Dhaka regardless of the visitor’s time zone. Contact links use `studioembrwave@gmail.com`.
+
+The contact form and journal response form open email drafts; they do not submit to a backend or publish comments. The inherited template’s third-party form recipient has been removed. Configure a studio-owned delivery service separately before promising website submissions. Journal search filters the six local articles.
+
+Project case studies, portfolio imagery, client feedback, and software names are clearly marked placeholders pending approved information. Packages use custom quotes rather than invented prices. The user’s uploaded studio video is retained unchanged. All original page sections remain available for later editing.
+
+The existing Cloudflare Pages project is https://embrwave-website.pages.dev; a push to its connected production branch can update that public site. A custom domain has been deferred. The preview branch must be deployed and its URL verified before claiming it is available for review.
