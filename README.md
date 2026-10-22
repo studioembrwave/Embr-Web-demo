@@ -51,6 +51,8 @@ See [Cloudflare setup](docs/CLOUDFLARE_SETUP.md) for the connection settings and
 
 ## Current content status
 
+Confirmed social profiles are [Instagram](https://www.instagram.com/embrwavee) and [X](https://x.com/embrwave). Shared social sections link to both profiles and the studio email; visible email addresses open `mailto:studioembrwave@gmail.com`.
+
 The About page lists Manam Shafin and Fazle Rabby Rownok (Stz) as Co-founder & Partner. Founder portraits, employee profiles, and unconfirmed project totals remain clearly marked placeholders. Edit the four original `data-team-member` articles in `about.html`; slider copies are generated automatically. The employee slider moves at 18 pixels per second, has previous/next and pause controls, and pauses on hover, keyboard focus, or when off screen. Reduced-motion preferences disable automatic movement by default.
 
 The site uses Embrwave’s “More Than Editing” copy and #2323ff accents. The studio location is Dhaka, Bangladesh, and the header clock uses Asia/Dhaka regardless of the visitor’s time zone. Contact links use `studioembrwave@gmail.com`.

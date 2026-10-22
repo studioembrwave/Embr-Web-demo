@@ -491,7 +491,15 @@ $(function () {
                 '', data.get('message')
             ].join('\n');
             result.style.display = 'block';
-            result.textContent = 'Opening an email draft. Review it and press Send in your email app. If nothing opens, email studioembrwave@gmail.com directly.';
+            const emailLink = document.createElement('a');
+            emailLink.href = 'mailto:studioembrwave@gmail.com';
+            emailLink.className = 'email-link';
+            emailLink.textContent = 'studioembrwave@gmail.com';
+            result.replaceChildren(
+                document.createTextNode('Opening an email draft. Review it and press Send in your email app. If nothing opens, email '),
+                emailLink,
+                document.createTextNode(' directly.')
+            );
             window.location.href = 'mailto:studioembrwave@gmail.com?subject=' +
                 encodeURIComponent('New project inquiry — ' + name) + '&body=' + encodeURIComponent(body);
         });
