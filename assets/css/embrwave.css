@@ -23,6 +23,33 @@ textarea:focus-visible, select:focus-visible {
 ::selection { background: var(--primary); color: #fff; }
 [hidden] { display: none !important; }
 
+/* Keep the rotating disk centered on the spindle in the stationary case. */
+.hero-disk-artwork {
+    position: relative;
+    width: clamp(220px, 24vw, 320px);
+    max-width: 100%;
+    aspect-ratio: 3296 / 2896;
+    flex: none;
+    isolation: isolate;
+}
+.hero-disk-case {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.hero-disk {
+    position: absolute;
+    left: 10.5%;
+    top: 1%;
+    width: 85.4%;
+    height: auto;
+    transform-origin: center;
+    animation: embr-disk-spin 20s linear infinite;
+}
+@keyframes embr-disk-spin {
+    to { transform: rotate(360deg); }
+}
+
 /* Keep decoration relative to the line, so wording changes cannot detach it. */
 .hero-title .heading-line { overflow: visible !important; }
 .hero-title .heading-line > .timeline-anim {
@@ -232,6 +259,7 @@ p.content-notice { margin-top: 24px; margin-bottom: 0; }
     .social-pending { font-size: 12px; }
 }
 @media (prefers-reduced-motion: reduce) {
+    .hero-disk { animation: none; }
     .preloader-wrap { display: none !important; }
     .scroll-animation { opacity: 1 !important; transform: none !important; }
     .client-logo-slide, .testimonial-list { animation: none !important; }
