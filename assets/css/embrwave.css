@@ -190,10 +190,17 @@ a.logo:focus-visible img.brand-logo { opacity: 0; }
     padding-inline: clamp(24px, 3vw, 80px);
 }
 @media (min-width: 1101px) {
+    .home-page .hero-sec > .container {
+        width: 90%;
+        padding-inline: clamp(21.6px, 2.7vw, 72px);
+    }
     .home-page .hero-sec .hero-sec-bottom {
         grid-template-columns: minmax(0, 1fr) minmax(0, min(40%, 580px));
         column-gap: clamp(48px, 8vw, 160px);
     }
+}
+@media (min-width: 1101px) and (max-width: 1599px) {
+    .home-page .hero-sec .hero-sec-bottom { column-gap: 3vw; }
 }
 @media (max-width: 809px) {
     .home-page .hero-sec > .container { padding-inline: 20px; }
