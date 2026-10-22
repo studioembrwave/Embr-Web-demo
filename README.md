@@ -30,6 +30,9 @@ The build creates `dist/` containing only public website files. Documentation, d
 - Template styles: `assets/css/style.css` and `assets/css/responsive.css`. Embrwave branding and responsive copy treatments: `assets/css/embrwave.css` (loaded last).
 - Site interactions: `assets/js/main.js`.
 - Images: `assets/imgs/`; videos: `assets/video/`.
+- Typography: `assets/css/fonts.css` defines the supplied Helvetica Neue faces, served as WOFF2 from `assets/fonts/helvetica-neue/`. Original font files are retained in `design/fonts/helvetica-neue/` outside the public build.
+
+The header and menu use the supplied white logo, switching to #2323ff on hover or keyboard focus. The original EPS artwork is retained in `design/branding/`.
 
 To add a project with the current HTML structure, copy a project detail page, give it a unique filename, update its content, add its thumbnail and link to `work.html`, and update the homepage if the project should be featured. Shared navigation and footers currently appear in each HTML page and must be kept consistent. A CMS or shared project data model has not been added.
 

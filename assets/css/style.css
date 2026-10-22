@@ -5,8 +5,8 @@
     --whiteBg: #ffffff;
     --primary: #2323ff;
     --paragraph: rgba(29, 29, 31, 0.7);
-    --font_inter_tight: "Inter Tight", sans-serif;
-    --font_inter: "Inter", system-ui;
+    --font_inter_tight: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font_inter: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* ======================================

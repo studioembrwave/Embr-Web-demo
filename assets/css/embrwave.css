@@ -3,6 +3,7 @@
     --primary: #2323ff;
     --bs-primary: #2323ff;
     --bs-primary-rgb: 35, 35, 255;
+    --bs-body-font-family: var(--font_inter);
 }
 
 .theme-btn.primary-bg,
@@ -28,6 +29,25 @@ textarea:focus-visible, select:focus-visible {
     width: 96px;
     height: auto;
     margin: 0;
+    transition: opacity .2s ease;
+}
+a.logo { position: relative; }
+a.logo::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../imgs/embrwave-logo-blue.svg") center / contain no-repeat;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .2s ease;
+}
+a.logo:hover::after,
+a.logo:focus-visible::after { opacity: 1; }
+a.logo:hover img.brand-logo,
+a.logo:focus-visible img.brand-logo { opacity: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+    .logo img.brand-logo, a.logo::after { transition: none; }
 }
 
 /* Keep the rotating disk centered on the spindle in the stationary case. */
