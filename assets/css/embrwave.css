@@ -23,10 +23,17 @@ textarea:focus-visible, select:focus-visible {
 ::selection { background: var(--primary); color: #fff; }
 [hidden] { display: none !important; }
 
+.logo { align-items: center; flex: none; }
+.logo img.brand-logo {
+    width: 96px;
+    height: auto;
+    margin: 0;
+}
+
 /* Keep the rotating disk centered on the spindle in the stationary case. */
 .hero-disk-artwork {
     position: relative;
-    width: clamp(220px, 24vw, 320px);
+    width: clamp(209px, 22.8vw, 304px);
     max-width: 100%;
     aspect-ratio: 3296 / 2896;
     flex: none;
@@ -131,6 +138,8 @@ textarea:focus-visible, select:focus-visible {
 .home-page .hero-sec .hero-sec-bottom .hero-sec-bottom-right {
     width: 100%;
     justify-self: end;
+    align-self: stretch;
+    justify-content: space-between;
     align-items: flex-end;
     text-align: right;
 }
@@ -138,7 +147,7 @@ textarea:focus-visible, select:focus-visible {
     align-items: flex-end;
 }
 .home-page .hero-sec video {
-    width: clamp(135px, 14.0625vw, 180px);
+    width: clamp(168.75px, 16.875vw, 243px);
     height: auto;
     aspect-ratio: 9 / 16;
     object-position: right center;
@@ -233,6 +242,7 @@ p.content-notice { margin-top: 24px; margin-bottom: 0; }
     .location-and-time { font-size: 13px; }
 }
 @media (max-width: 600px) {
+    .logo img.brand-logo { width: 80px; }
     .hero-title, .hero-sec-2 .hero-title { font-size: clamp(38px, 10vw, 60px); }
     .home-page .hero-title { font-size: clamp(44px, 11.5vw, 68px); }
     .hero-sec .hero-sec-top { margin-bottom: 64px; }
