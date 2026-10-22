@@ -486,6 +486,9 @@ $(function () {
             const body = [
                 'Name: ' + name,
                 'Email: ' + data.get('email'),
+                'Phone: ' + (data.get('phone') || 'Not provided'),
+                'Company / organization: ' + (data.get('company') || 'Not provided'),
+                'Social link: ' + (data.get('social_link') || 'Not provided'),
                 'Creating for: ' + data.get('company_type'),
                 'Budget: ' + (data.get('budget') || 'To discuss'),
                 '', data.get('message')

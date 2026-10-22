@@ -3,9 +3,11 @@
 .about-intro { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 100px); align-items: start; }
 .about-eyebrow { margin: 0 0 28px; color: #aaa; font-size: 13px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; }
 .about-page-title { margin: 0; font-size: clamp(48px, 7.5vw, 104px); line-height: 1.02; letter-spacing: -.055em; font-weight: 700; }
+.about-studio-logo { display: block; width: clamp(160px, 18vw, 240px); max-width: 70%; height: auto; margin-top: 32px; }
+.about-page :is(h1, h2, h3, h4, h5, h6) { font-weight: 700; }
 .about-intro-copy { max-width: 640px; }
 .about-intro-copy p { font-size: 18px; line-height: 1.7; color: #bbb; }
-.about-intro-copy .about-lead { font-size: clamp(28px, 3vw, 40px); color: #fff; line-height: 1.12; letter-spacing: -.025em; margin-bottom: 28px; }
+.about-intro-copy .about-lead { font-size: clamp(28px, 3vw, 40px); color: #fff; line-height: 1.12; letter-spacing: -.025em; margin: 0 0 28px; }
 .about-intro-copy .theme-btn { margin-top: 16px; padding: 12px 20px; }
 .studio-practices { display: flex; flex-wrap: wrap; gap: 14px 28px; margin-top: 64px; padding-top: 26px; border-top: 1px solid #292929; color: #bbb; font-size: 13px; text-transform: uppercase; }
 .studio-section { padding: clamp(64px, 8vw, 112px) 0; border-top: 1px solid #242424; }

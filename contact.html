@@ -123,7 +123,7 @@
                                 <nav class="main-menu">
                                     <ul>
                                         <li><a href="./work.html" class="splite-text-anim"><span>( Our work )</span><span aria-hidden="true">( Our work )</span></a></li>
-                                        <li><a href="./about.html" class="splite-text-anim"><span>( About )</span><span aria-hidden="true">( About )</span></a></li><li><a href="./work.html" class="splite-text-anim"><span>( Start a project )</span><span aria-hidden="true">( Start a project )</span></a></li>
+                                        <li><a href="./about.html" class="splite-text-anim"><span>( About )</span><span aria-hidden="true">( About )</span></a></li><li><a href="#contactForm" class="splite-text-anim"><span>( Start a project )</span><span aria-hidden="true">( Start a project )</span></a></li>
                                     </ul>
                                 </nav>
 
@@ -158,22 +158,50 @@
                                 <div class="form-col-2">
                                     <div class="input-group">
                                         <label for="first_name" class="title-with-circle"><span class="circle-shape" aria-hidden="true"></span>First name</label>
-                                        <input type="text" id="first_name" name="first_name" placeholder="Your first name" required="">
+                                        <input type="text" id="first_name" name="first_name" placeholder="Your first name" autocomplete="given-name" required="">
                                     </div>
                                     <div class="input-group">
                                         <label for="last_name" class="title-with-circle"><span class="circle-shape" aria-hidden="true"></span>Last name</label>
-                                        <input type="text" id="last_name" name="last_name" placeholder="Your last name">
+                                        <input type="text" id="last_name" name="last_name" placeholder="Your last name" autocomplete="family-name">
                                     </div>
                                 </div>
-                                <div class="input-group">
-                                    <label for="email" class="title-with-circle"><span class="circle-shape" aria-hidden="true"></span>Email address</label>
-                                    <input type="email" id="email" name="email" placeholder="you@example.com" required="">
+                                <div class="form-col-2">
+                                    <div class="input-group">
+                                        <label for="email" class="title-with-circle"><span class="circle-shape" aria-hidden="true"></span>Email address</label>
+                                        <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required="">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="phone" class="title-with-circle"><span class="circle-shape" aria-hidden="true"></span>Phone number (optional)</label>
+                                        <input type="tel" id="phone" name="phone" placeholder="Include your country code" autocomplete="tel">
+                                    </div>
+                                </div>
+                                <div class="form-col-2">
+                                    <div class="input-group">
+                                        <label for="company" class="title-with-circle"><span class="circle-shape" aria-hidden="true"></span>Company / organization (if applicable)</label>
+                                        <input type="text" id="company" name="company" placeholder="Your company or organization name" autocomplete="organization">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="social_link" class="title-with-circle"><span class="circle-shape" aria-hidden="true"></span>Social link (optional)</label>
+                                        <input type="url" id="social_link" name="social_link" placeholder="https://your-social-profile.com" inputmode="url" autocapitalize="none" spellcheck="false">
+                                    </div>
                                 </div>
 
                                 <div class="form-col-2">
                                     <div class="input-group">
                                         <label for="selectcat" class="title-with-circle"><span class="circle-shape" aria-hidden="true"></span>Who are you creating for?</label>
-                                        <select id="selectcat" name="company_type"><option value="A brand or business">A brand or business</option><option value="My creator or personal brand">My creator or personal brand</option><option value="An agency or creative team">An agency or creative team</option><option value="An independent project">An independent project</option><option value="Something else">Something else</option></select>
+                                        <select id="selectcat" name="company_type">
+                                            <option value="A brand or business">A brand or business</option>
+                                            <option value="Creator / personal brand">Creator / personal brand</option>
+                                            <option value="An agency or creative team">An agency or creative team</option>
+                                            <option value="A startup">A startup</option>
+                                            <option value="A music artist or record label">A music artist or record label</option>
+                                            <option value="A film or production team">A film or production team</option>
+                                            <option value="An event or campaign">An event or campaign</option>
+                                            <option value="A nonprofit or community">A nonprofit or community</option>
+                                            <option value="An educational organization">An educational organization</option>
+                                            <option value="An independent project">An independent project</option>
+                                            <option value="Something else">Something else</option>
+                                        </select>
                                     </div>
 
                                     <div class="input-group">
@@ -187,7 +215,7 @@
                                     <textarea name="message" id="message" placeholder="What are you creating? Include the services you need, your timeline, and any useful references." required=""></textarea>
                                 </div>
                                 <div class="input-group">
-                                    <button class="theme-btn" type="submit">( Open email draft )</button>
+                                    <button class="theme-btn primary-bg" type="submit">( Open email draft )</button>
                                 </div>
                                 <p class="text-base text-center" id="result" role="status" aria-live="polite"></p>
                             <p class="content-notice">This opens a draft in your email app; it does not submit through a website backend. Prefer email? Write to <a href="mailto:studioembrwave@gmail.com" class="email-link">studioembrwave@gmail.com</a>.</p></form>

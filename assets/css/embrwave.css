@@ -381,6 +381,29 @@ p.content-notice { margin-top: 24px; margin-bottom: 0; }
 .cta-sec-2 .cta-widget a { overflow-wrap: anywhere; }
 .contact-sec label { line-height: 1.4; }
 .contact-sec textarea { min-height: 180px; }
+.contact-form .input-group { min-width: 0; }
+.contact-form .input-group label { color: #fff; }
+.contact-form .input-group :is(input, select, textarea) {
+    background-color: #171717;
+    border: 1px solid #555;
+    color: #fff;
+    caret-color: #fff;
+    color-scheme: dark;
+}
+.contact-form .input-group :is(input, textarea)::placeholder { color: #bbb; opacity: 1; }
+.contact-form .input-group select { padding-right: 56px; }
+.contact-form select option { background: #171717; color: #fff; }
+.contact-form .input-group :is(input, select, textarea):focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 3px;
+    box-shadow: 0 0 0 5px var(--primary);
+}
+.contact-form .input-group input:autofill {
+    -webkit-text-fill-color: #fff;
+    box-shadow: 0 0 0 1000px #171717 inset;
+}
+.contact-form .input-group button.theme-btn { background: var(--primary); color: #fff; line-height: 1.3; }
+.contact-form .input-group button.theme-btn:hover { background: #fff; color: #000; }
 .blog-detail-sec .custom-row > .left { min-width: 0; }
 .blog-sidebar { min-width: 0; }
 .blog-meta { flex-wrap: wrap; gap: 14px; }
