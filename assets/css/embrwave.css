@@ -22,6 +22,11 @@ textarea:focus-visible, select:focus-visible {
     box-shadow: 0 0 0 7px var(--primary);
 }
 ::selection { background: var(--primary); color: #fff; }
+img, video, picture, .logo, .work-box .overlay, .work-box .hover_mouse, [data-protected-media] {
+    -webkit-touch-callout: none;
+    -webkit-user-drag: none;
+}
+img, video { -webkit-user-select: none; user-select: none; }
 [hidden] { display: none !important; }
 .brand-mark { font-size: .42em; line-height: 0; vertical-align: super; top: 0; letter-spacing: 0; }
 .popup-menu-wrap { gap: clamp(24px, 5vh, 64px); overflow-y: auto; }

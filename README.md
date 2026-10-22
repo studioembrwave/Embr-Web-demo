@@ -59,6 +59,8 @@ The About page lists Manam Shafin and Fazle Rabby Rownok (Stz) as Co-founder & P
 
 The site uses Embrwave’s “More Than Editing” copy and #2323ff accents. The studio location is Dhaka, Bangladesh, and the header clock uses Asia/Dhaka regardless of the visitor’s time zone. Contact links use `studioembrwave@gmail.com`.
 
+Shared JavaScript blocks context menus and dragging on images, videos, logos, and portfolio image overlays, including media added dynamically. CSS also discourages mobile save callouts where supported. Use `data-protected-media` on a wrapper for future background-image media. Text, form fields, and ordinary links retain their normal browser interactions. These measures discourage casual saving; public media can still be retrieved through browser tools or captured in screenshots.
+
 The project form includes optional phone, company / organization, and social link fields, plus audience options for businesses, creators, agencies, startups, music, film, events, nonprofits, education, and personal projects. These details are included in the email draft.
 
 The contact form and journal response form open email drafts; they do not submit to a backend or publish comments. The inherited template’s third-party form recipient has been removed. Configure a studio-owned delivery service separately before promising website submissions. Journal search filters the six local articles.

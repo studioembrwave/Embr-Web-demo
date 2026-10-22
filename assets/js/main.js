@@ -5,6 +5,7 @@ $(function () {
      *      TABLE OF CONTENT
      * ===============================================
      * # Loader
+     * # Media
      * # Real Time
      * # Popup Menu
      * # Gsap Smooth Scroll
@@ -14,6 +15,18 @@ $(function () {
      *
      */
 
+
+    /* ===== Media ===== */
+    // Discourage casual saving, including on linked portfolio thumbnails and
+    // media inserted later (such as employee-slider copies). This is not DRM.
+    const mediaSelector = 'img, video, picture, .logo, .work-box .overlay, .work-box .hover_mouse, [data-protected-media]';
+    function preventMediaSave(event) {
+        if (event.target instanceof Element && event.target.closest(mediaSelector)) {
+            event.preventDefault();
+        }
+    }
+    document.addEventListener('contextmenu', preventMediaSave, true);
+    document.addEventListener('dragstart', preventMediaSave, true);
 
     /* ===== Loader ===== */
     const loader = document.querySelector('.preloader-wrap');
