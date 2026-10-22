@@ -23,6 +23,14 @@ textarea:focus-visible, select:focus-visible {
 }
 ::selection { background: var(--primary); color: #fff; }
 [hidden] { display: none !important; }
+.brand-mark { font-size: .42em; line-height: 0; vertical-align: super; top: 0; letter-spacing: 0; }
+.popup-menu-wrap { gap: clamp(24px, 5vh, 64px); overflow-y: auto; }
+.popup-menu-wrap .popup-menu ul li a {
+    font-size: clamp(30px, min(4.6vw, 6vh), 80px);
+    line-height: 1.05;
+    padding-top: clamp(12px, 2vh, 24px);
+    padding-bottom: clamp(12px, 2vh, 24px);
+}
 
 .preloader-wrap { inset: 0; }
 .preloader-symbol {
@@ -297,13 +305,23 @@ p.content-notice { margin-top: 24px; margin-bottom: 0; }
 }
 .cta-sec .section-header-2 h6 { text-transform: none; line-height: 1.6; max-width: 650px; }
 .footer-sec .big-text .section-title2 {
-    font-size: clamp(54px, 16.5vw, 230px);
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: .1em;
+    font-size: clamp(40px, 13vw, 200px);
     line-height: 1.1;
     letter-spacing: -.055em;
 }
 .footer-sec .copyright-wrap { flex-wrap: wrap; gap: 20px; }
 .footer-sec .copyright-wrap p { overflow-wrap: anywhere; max-width: 100%; }
-.footer-sec .big-text .circle-primary-shape { right: 0; bottom: .18em; }
+.footer-sec .big-text .timeline-anim { white-space: nowrap; }
+.footer-sec .big-text .circle-primary-shape {
+    position: static !important;
+    width: .5em;
+    height: .5em;
+    flex: none;
+}
 .cta-sec-2 .custom-row { flex-wrap: wrap; gap: 32px; }
 .cta-sec-2 .cta-widget { flex: 1 1 220px; max-width: 100%; }
 .cta-sec-2 .cta-widget a { overflow-wrap: anywhere; }

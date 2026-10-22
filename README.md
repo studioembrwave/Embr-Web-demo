@@ -1,6 +1,6 @@
-# Embrwave Studios
+# Embrwave™ Studios
 
-Embrwave Studios' editable, static website. The current site includes 21 HTML pages and bundled CSS, JavaScript, fonts, images, and video. No package installation is required.
+Embrwave™ Studios' editable, static website. The current site includes 22 HTML pages and bundled CSS, JavaScript, fonts, images, and video. No package installation is required.
 
 ## Run locally
 
@@ -25,6 +25,7 @@ The build creates `dist/` containing only public website files. Documentation, d
 ## Edit the website
 
 - Homepage: `index.html`.
+- About page: `about.html`, with styles in `assets/css/about.css` and the employee slider in `assets/js/about.js`. The toolkit section lives here rather than on the homepage.
 - Portfolio listing: `work.html`; project details: `work-single*.html`.
 - Other pages: `service.html`, `pricing.html`, `contact.html`, `blog.html`, and `blog-single*.html`.
 - Template styles: `assets/css/style.css` and `assets/css/responsive.css`. Embrwave branding and responsive copy treatments: `assets/css/embrwave.css` (loaded last).
@@ -49,6 +50,8 @@ Use `preview` for changes under review and `main` for the approved live website.
 See [Cloudflare setup](docs/CLOUDFLARE_SETUP.md) for the connection settings and deployment steps. GitHub branch protection and Cloudflare settings are account configuration; these files do not enable them automatically.
 
 ## Current content status
+
+The About page lists Manam Shafin and Fazle Rabby Rownok (Stz) as Co-founder & Partner. Founder portraits, employee profiles, and unconfirmed project totals remain clearly marked placeholders. Edit the four original `data-team-member` articles in `about.html`; slider copies are generated automatically. The employee slider moves at 18 pixels per second, has previous/next and pause controls, and pauses on hover, keyboard focus, or when off screen. Reduced-motion preferences disable automatic movement by default.
 
 The site uses Embrwave’s “More Than Editing” copy and #2323ff accents. The studio location is Dhaka, Bangladesh, and the header clock uses Asia/Dhaka regardless of the visitor’s time zone. Contact links use `studioembrwave@gmail.com`.
 

@@ -504,7 +504,7 @@ $(function () {
             const body = ['Article: ' + document.title, 'Name: ' + (data.get('name') || ''),
                 'Email: ' + (data.get('email') || ''), '', data.get('comment')].join('\n');
             window.location.href = 'mailto:studioembrwave@gmail.com?subject=' +
-                encodeURIComponent('Thoughts from the Embrwave Journal') + '&body=' + encodeURIComponent(body);
+                encodeURIComponent('Thoughts from the Embrwave™ Journal') + '&body=' + encodeURIComponent(body);
         });
     });
     const journalEntries = [...document.querySelectorAll('[data-journal-entry]')];
