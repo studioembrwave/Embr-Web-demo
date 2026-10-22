@@ -22,7 +22,7 @@
 .studio-stats strong { display: block; font-size: clamp(52px, 6vw, 80px); line-height: 1.1; letter-spacing: -.05em; font-weight: 500; }
 .studio-stats span { display: block; margin-top: 14px; font-size: 13px; color: #bbb; text-transform: uppercase; }
 .studio-text-link { display: inline-block; margin-top: 32px; border-bottom: 1px solid currentColor; font-size: 14px; font-weight: 700; text-transform: uppercase; }
-.workflow-steps { max-width: 920px; margin-left: auto; }
+.workflow-steps { max-width: none; margin-left: 0; text-align: left; }
 .workflow-steps article { display: grid; grid-template-columns: 60px minmax(0, 1fr); gap: 32px; padding: 32px 0; border-top: 1px solid #424242; }
 .workflow-steps .studio-index { color: #fff; margin: 5px 0 0; }
 .workflow-steps p { max-width: 670px; }
@@ -30,7 +30,7 @@
 .about-page .favourite-stack-sec .section-header { padding: 0; margin-bottom: 56px; gap: 32px; }
 .about-page .favourite-stack-sec .section-header .left { max-width: 720px; }
 .about-page .favourite-stack-sec .section-header p { color: #bbb; font-size: 16px; line-height: 1.7; text-transform: none; margin-top: 24px; }
-.about-page .favourite-stack-sec .experience-box { margin-bottom: 40px; }
+.about-page .favourite-stack-sec .experience-box { margin-bottom: 0; }
 .about-page .favourite-stack-sec .experience-content p { font-size: 16px; line-height: 1.7; letter-spacing: 0; font-weight: 400; }
 .about-page .favourite-stack-sec .experience-content h5 { font-size: 26px; line-height: 1.3; }
 .about-page .favourite-stack-sec .experience-content .designation { font-size: 15px; line-height: 1.4; color: #bbb; }

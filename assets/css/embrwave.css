@@ -285,6 +285,56 @@ p.content-notice { margin-top: 24px; margin-bottom: 0; }
 .about-bottom .est-date { max-width: 100%; font-size: 14px; line-height: 1.5; }
 .experience-box .experience-content h5,
 .experience-box .experience-content .designation { line-height: 1.2; }
+.faq-list-wrap, .service-faq-wrap, .service-list-wrap {
+    max-width: none;
+    margin-left: 0;
+    text-align: left;
+}
+.faq-item .accordion-header button,
+.service-faq-item .accordion-header button { text-align: left; }
+.faq-item .accordion-body { padding-right: 0; }
+.faq-item .accordion-content { max-width: 920px; }
+.service-faq-item .accordion-body {
+    padding-left: 0;
+    padding-right: 0;
+    gap: clamp(32px, 5vw, 80px);
+}
+.service-faq-item .accordion-body .accordion-content { min-width: 0; }
+.experience-lists {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 48px clamp(32px, 5vw, 80px);
+    max-width: none;
+    margin-left: 0;
+    text-align: left;
+}
+.experience-lists .experience-box {
+    min-width: 0;
+    margin: 0;
+    padding-top: 28px;
+    border-top: 1px solid #333;
+}
+.experience-lists .experience-box .left { min-width: 0; gap: 24px; }
+.experience-lists .experience-content { min-width: 0; }
+.experience-lists .experience-content h5 { display: block; }
+.experience-lists .experience-content p { max-width: none; }
+.tool-badge {
+    display: grid;
+    place-items: center;
+    flex: 0 0 48px;
+    width: 48px;
+    height: 48px;
+    border: 1px solid var(--primary);
+    background: #0e0e18;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -.03em;
+}
+@media (max-width: 700px) {
+    .experience-lists { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+    .experience-lists .experience-box .left { gap: 20px; }
+}
 .work-bottom-content { flex-wrap: wrap; row-gap: 12px; }
 .work-bottom-content > span { max-width: 100%; overflow-wrap: anywhere; }
 .work-service-detail-sec .custom-row { gap: 28px; flex-wrap: wrap; }

@@ -51,7 +51,7 @@ GitHub Actions validates changes but does not deploy them itself. A failed GitHu
 - Use `assets/imgs/` for optimized project images and thumbnails.
 - Keep individual files below Cloudflare Pages' 25 MiB limit; use R2 or Stream for large media.
 - Email links and forms open drafts to studioembrwave@gmail.com. No website form backend or public comment storage is configured; add a studio-owned service separately if needed.
-- Review portfolio placeholders, approved testimonials, software names, commercial terms, and social profiles before final launch. The confirmed studio location is Dhaka, Bangladesh.
+- Review portfolio placeholders, founder portraits, employee profiles, approved testimonials, commercial terms, and social links before final launch. The confirmed studio location is Dhaka, Bangladesh.
 - A custom domain and DNS changes require a separate approval. Preserve email-related DNS records.
 
 ## 5. Rollback
