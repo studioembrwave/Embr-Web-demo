@@ -16,15 +16,36 @@ $(function () {
 
 
     /* ===== Loader ===== */
-    $(window).on('load', function () {
+    const loader = document.querySelector('.preloader-wrap');
+    let introFinishing = false;
+    const loaderFallback = setTimeout(revealPage, 8000);
+
+    function revealPage() {
+        if (introFinishing) return;
+        introFinishing = true;
+        clearTimeout(loaderFallback);
+
+        const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const ripple = loader?.querySelector('.preloader-ripple-fill')?.getAnimations()[0];
+        const duration = Number(ripple?.effect.getTiming().duration) || 0;
+        const elapsed = Number(ripple?.currentTime) || 0;
+        // Show one complete white-blue-white cycle without adding a delay to slow loads.
+        const remaining = reducedMotion ? 0 : Math.max(0, duration - elapsed);
+
         setTimeout(() => {
-            $('.preloader-wrap').delay('500').fadeOut(1000);
-        }, 200);
-        setTimeout(() => {
-            // $('.hero-sec .hero-footer-wrap.scroll-from-bottom').addClass('animated');
+            const finish = () => {
+                if (!loader) return;
+                loader.hidden = true;
+                loader.setAttribute('aria-hidden', 'true');
+            };
+            if (!loader || reducedMotion) finish();
+            else $(loader).fadeOut(300, finish);
             scroll_animations();
-        }, 800);
-    });
+        }, remaining);
+    }
+
+    if (document.readyState === 'complete') revealPage();
+    else $(window).one('load', revealPage);
 
 
 

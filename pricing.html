@@ -16,6 +16,8 @@
         <link rel="stylesheet" href="./assets/css/line-awesome.min.css">
     
     
+        <link rel="preload" href="./assets/imgs/embrwave-loader-symbol.svg" as="image" type="image/svg+xml">
+
         <!-- ===== Fonts ===== -->
         <link rel="preload" href="./assets/fonts/helvetica-neue/helvetica-neue-roman.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="preload" href="./assets/fonts/helvetica-neue/helvetica-neue-bold.woff2" as="font" type="font/woff2" crossorigin>
@@ -34,11 +36,11 @@
     <!-- ===== Magic Cursor End ===== -->
     
     <!-- ===== Pre Loader Start ===== -->
-    <div class="preloader-wrap">
+    <div class="preloader-wrap" role="status" aria-label="Loading Embrwave">
         <div class="preloader-content">
-            <div class="logo">Embrwave <img src="./assets/imgs/r.svg" alt="" aria-hidden="true"></div>
-            <div class="preloader-bar-wrap">
-                <div class="preloader-bar"></div>
+            <div class="preloader-symbol" aria-hidden="true">
+                <span class="preloader-ripple-fill"></span>
+                <span class="preloader-ripple-wave"></span>
             </div>
         </div>
     </div>

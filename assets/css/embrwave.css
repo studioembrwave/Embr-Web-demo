@@ -24,6 +24,47 @@ textarea:focus-visible, select:focus-visible {
 ::selection { background: var(--primary); color: #fff; }
 [hidden] { display: none !important; }
 
+.preloader-wrap { inset: 0; }
+.preloader-symbol {
+    position: relative;
+    width: clamp(160px, 22vw, 240px);
+    aspect-ratio: 943.707 / 387.156;
+    background: #fff;
+    -webkit-mask: url("../imgs/embrwave-loader-symbol.svg") center / contain no-repeat;
+    mask: url("../imgs/embrwave-loader-symbol.svg") center / contain no-repeat;
+}
+.preloader-ripple-fill,
+.preloader-ripple-wave {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0);
+}
+.preloader-ripple-fill {
+    background: radial-gradient(circle closest-side,
+        var(--primary) 0 76%, rgba(35, 35, 255, .7) 88%, transparent 100%);
+    animation: preloader-blue-ripple 2.4s cubic-bezier(.45, 0, .55, 1) infinite;
+}
+.preloader-ripple-wave {
+    background: radial-gradient(circle closest-side,
+        transparent 0 67%, rgba(255, 255, 255, .5) 70%, transparent 74%,
+        transparent 83%, rgba(255, 255, 255, .3) 86%, transparent 90%);
+    animation: preloader-white-wave 2.4s cubic-bezier(.45, 0, .55, 1) infinite;
+}
+@keyframes preloader-blue-ripple {
+    0%, 100% { transform: translate(-50%, -50%) scale(0); }
+    45%, 55% { transform: translate(-50%, -50%) scale(1.75); }
+}
+@keyframes preloader-white-wave {
+    0%, 100% { transform: translate(-50%, -50%) scale(0); opacity: 0; }
+    20%, 80% { opacity: 1; }
+    45%, 55% { transform: translate(-50%, -50%) scale(1.75); opacity: 0; }
+}
+
 .logo { align-items: center; flex: none; }
 .logo img.brand-logo {
     width: 96px;
@@ -289,6 +330,7 @@ p.content-notice { margin-top: 24px; margin-bottom: 0; }
     .social-pending { font-size: 12px; }
 }
 @media (prefers-reduced-motion: reduce) {
+    .preloader-ripple-fill, .preloader-ripple-wave { animation: none; }
     .hero-disk { animation: none; }
     .preloader-wrap { display: none !important; }
     .scroll-animation { opacity: 1 !important; transform: none !important; }

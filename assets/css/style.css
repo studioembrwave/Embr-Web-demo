@@ -279,56 +279,11 @@ a.link-with-border:hover {
     position: fixed;
     text-align: center;
 }
-.preloader-wrap .preloader-content .logo {
-    font-size: 90px;
-    line-height: 87px;
-    letter-spacing: -4.3px;
-}
-.preloader-wrap .preloader-content .logo img {
-    width: 48px;
-    height: 48px;
-    margin: 0;
-    transform: translate(4px, -8px);
-}
 .preloader-wrap .preloader-content {
     display: flex;
-    flex-direction: column;
-    gap: 50px;
     align-items: center;
     justify-content: center;
 }
-.preloader-bar-wrap {
-    max-width: 618px;
-    width: 100%;
-    background: #1F1F1F;
-    border-radius: 10px;
-    height: 6px;
-    position: relative;
-    overflow: hidden;
-}
-.preloader-bar-wrap .preloader-bar {
-    /* background: linear-gradient(89.99deg, #2323ff %200.01%, %20 rgba(176,%20255,%2075,%200) %2073.84%); */
-    background: linear-gradient(89.99deg, #2323ff00, #2323ff);
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    animation: preLoader 4s infinite linear;
-    transform: translateX(-100%);
-}
-
-@keyframes preLoader {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(0%);
-    }
-}
-
-
 
 /* ===== # Magic Cursor ===== */
 #magic-cursor {
